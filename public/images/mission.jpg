@@ -1,0 +1,11 @@
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3F2240;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D355C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="800" fill="url(#grad4)"/>
+  <text x="500" y="380" font-family="Arial" font-size="56" fill="#E8E0E6" text-anchor="middle" font-weight="bold">Notre Mission</text>
+  <text x="500" y="440" font-family="Arial" font-size="32" fill="#CBC2C5" text-anchor="middle">Excellence & Innovation</text>
+</svg>
