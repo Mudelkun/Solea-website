@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solea - Produits capillaires professionnels, école de cosmétique, auto-école et services de décoration">
+    <title>Solea - Produits Capillaires, École, Conduite & Décoration</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <!-- Top navigation bar with logo, menu items, search, cart, and language toggle -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo on the left side -->
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Solea</h1>
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button (hamburger icon) -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Main navigation links -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="#shop">Boutique</a></li>
+                    <li><a href="#school">École</a></li>
+                    <li><a href="#driving">Conduite</a></li>
+                    <li><a href="#decoration">Décoration</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Right side utilities: search, cart, language -->
+                <div class="nav-utilities">
+                    <!-- Search bar -->
+                    <div class="search-box">
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit" aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Cart/Order List icon -->
+                    <a href="#order" class="cart-icon" aria-label="Order list">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+
+                    <!-- Language toggle -->
+                    <div class="language-toggle">
+                        <a href="#" class="active">FR</a>
+                        <span>|</span>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <!-- Main hero banner with background image, headline, and primary CTAs -->
+    <section class="hero">
+        <div class="hero-background">
+            <!-- Background image will be set via CSS -->
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h2 class="hero-title">Bienvenue chez Solea</h2>
+            <p class="hero-subtitle">Produits capillaires professionnels, école de cosmétique, auto-école et services de décoration</p>
+            
+            <!-- Primary call-to-action buttons -->
+            <div class="hero-ctas">
+                <a href="#shop" class="btn btn-primary">Boutique Produits</a>
+                <a href="#school" class="btn btn-secondary">École Professionnelle</a>
+                <a href="#driving" class="btn btn-secondary">Auto-École</a>
+                <a href="#decoration" class="btn btn-secondary">Décoration</a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICE CARDS SECTION ==================== -->
+    <!-- Three main service offerings displayed as cards -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <p class="section-subtitle">Découvrez notre gamme complète de services professionnels</p>
+            
+            <div class="services-grid">
+                <!-- Service Card 1: Hair Products -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/hair-products.jpg" alt="Produits Capillaires">
+                        <div class="service-overlay">
+                            <span class="overlay-icon">✨</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Produits Capillaires</h3>
+                        <p>Découvrez notre sélection exclusive de produits capillaires professionnels pour tous types de cheveux. Des soins de qualité pour sublimer votre beauté naturelle.</p>
+                        <a href="#shop" class="btn btn-outline">Voir la Boutique</a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: School -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/school.jpg" alt="École de Cosmétique">
+                        <div class="service-overlay">
+                            <span class="overlay-icon">🎓</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>École de Cosmétique</h3>
+                        <p>Formation professionnelle en cosmétique et esthétique. Programmes certifiés avec des instructeurs expérimentés pour lancer votre carrière dans la beauté.</p>
+                        <a href="#school" class="btn btn-outline">En Savoir Plus</a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: Driving & Decoration -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/driving-deco.jpg" alt="Conduite et Décoration">
+                        <div class="service-overlay">
+                            <span class="overlay-icon">🚗</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Conduite & Décoration</h3>
+                        <p>Auto-école avec instructeurs qualifiés et services de décoration d'intérieur professionnels. Nous vous accompagnons dans tous vos projets.</p>
+                        <a href="#driving" class="btn btn-outline">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED PRODUCTS CAROUSEL ==================== -->
+    <!-- Carousel showcasing featured hair care products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Produits Vedettes</h2>
+            <p class="section-subtitle">Nos produits les plus populaires sélectionnés pour vous</p>
+            
+            <div class="products-carousel">
+                <button class="carousel-btn prev" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="carousel-track">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-1.jpg" alt="Shampooing Hydratant">
+                            <span class="product-badge">Nouveau</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>Shampooing Hydratant Professionnel</h4>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(127)</span>
+                            </div>
+                            <p class="product-price">24.99€</p>
+                            <button class="btn btn-small btn-primary">Ajouter à la Liste</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-2.jpg" alt="Masque Capillaire">
+                            <span class="product-badge bestseller">Bestseller</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>Masque Capillaire Réparateur</h4>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <p class="product-price">32.99€</p>
+                            <button class="btn btn-small btn-primary">Ajouter à la Liste</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-3.jpg" alt="Sérum Brillance">
+                        </div>
+                        <div class="product-info">
+                            <h4>Sérum Brillance Intense</h4>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <p class="product-price">28.99€</p>
+                            <button class="btn btn-small btn-primary">Ajouter à la Liste</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-4.jpg" alt="Huile Nourrissante">
+                        </div>
+                        <div class="product-info">
+                            <h4>Huile Nourrissante Bio</h4>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(156)</span>
+                            </div>
+                            <p class="product-price">35.99€</p>
+                            <button class="btn btn-small btn-primary">Ajouter à la Liste</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <!-- Customer reviews and success stories -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Témoignages</h2>
+            <p class="section-subtitle">Ce que nos clients disent de nous</p>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Les produits Solea ont transformé mes cheveux ! Après seulement quelques semaines d'utilisation, mes cheveux sont plus brillants et plus sains. Je recommande vivement !"</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="Marie Dubois">
+                        <div>
+                            <h4>Marie Dubois</h4>
+                            <p>Cliente fidèle depuis 2 ans</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"J'ai suivi la formation en cosmétique à l'école Solea et c'était une expérience exceptionnelle. Les instructeurs sont compétents et passionnés. J'ai maintenant mon propre salon !"</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="Sophie Laurent">
+                        <div>
+                            <h4>Sophie Laurent</h4>
+                            <p>Diplômée 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"L'auto-école Solea m'a aidé à obtenir mon permis du premier coup ! Les instructeurs sont patients et professionnels. Merci pour tout !"</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-3.jpg" alt="Thomas Martin">
+                        <div>
+                            <h4>Thomas Martin</h4>
+                            <p>Nouveau conducteur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWS & ANNOUNCEMENTS SECTION ==================== -->
+    <!-- Latest updates, news, and enrollment dates -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">Actualités & Événements</h2>
+            <p class="section-subtitle">Restez informé de nos dernières nouvelles</p>
+            
+            <div class="news-grid">
+                <!-- News Item 1 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-1.jpg" alt="Nouvelle Collection">
+                        <span class="news-date">15 Jan 2026</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Produits</span>
+                        <h3>Nouvelle Collection Printemps 2026</h3>
+                        <p>Découvrez notre nouvelle gamme de produits capillaires bio, spécialement conçue pour la saison printanière. Des formules naturelles pour des cheveux éclatants.</p>
+                        <a href="#" class="news-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <!-- News Item 2 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-2.jpg" alt="Inscriptions École">
+                        <span class="news-date">10 Jan 2026</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">École</span>
+                        <h3>Inscriptions Ouvertes - Session Mars 2026</h3>
+                        <p>Les inscriptions pour notre programme de cosmétique professionnel débutant en mars sont maintenant ouvertes. Places limitées disponibles !</p>
+                        <a href="#" class="news-link">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <!-- News Item 3 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-3.jpg" alt="Promotion Conduite">
+                        <span class="news-date">05 Jan 2026</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Conduite</span>
+                        <h3>Offre Spéciale Auto-École</h3>
+                        <p>Profitez de notre promotion de début d'année : -20% sur tous nos forfaits de conduite. Valide jusqu'à fin février 2026.</p>
+                        <a href="#" class="news-link">Lire la suite →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER SECTION ==================== -->
+    <!-- Email subscription form for newsletters -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Restez Informé</h2>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos offres exclusives, nos actualités et nos conseils beauté.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BRAND / MISSION SECTION ==================== -->
+    <!-- Company mission statement and partner/certification logos -->
+    <section class="brand-mission">
+        <div class="container">
+            <div class="mission-grid">
+                <!-- Mission statement -->
+                <div class="mission-content">
+                    <h2>Notre Mission</h2>
+                    <p>Chez Solea, nous nous engageons à fournir des produits et services de la plus haute qualité. Depuis notre création, nous combinons excellence, innovation et passion pour offrir à nos clients une expérience exceptionnelle dans tous nos domaines d'activité.</p>
+                    <p>Que ce soit à travers nos produits capillaires professionnels, notre école de cosmétique accréditée, notre auto-école certifiée ou nos services de décoration personnalisés, nous mettons notre expertise au service de votre réussite et de votre bien-être.</p>
+                    <a href="#about" class="btn btn-outline">En Savoir Plus</a>
+                </div>
+
+                <!-- Mission image -->
+                <div class="mission-image">
+                    <img src="images/mission.jpg" alt="Solea Mission">
+                </div>
+            </div>
+
+            <!-- Partner logos and certifications -->
+            <div class="partners">
+                <h3>Nos Partenaires & Certifications</h3>
+                <div class="partners-logos">
+                    <img src="images/partner-1.jpg" alt="Partenaire 1">
+                    <img src="images/partner-2.jpg" alt="Partenaire 2">
+                    <img src="images/partner-3.jpg" alt="Partenaire 3">
+                    <img src="images/partner-4.jpg" alt="Partenaire 4">
+                    <img src="images/partner-5.jpg" alt="Partenaire 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <!-- Site footer with links, contact information, and social media -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#shop">Boutique</a></li>
+                        <li><a href="#school">École</a></li>
+                        <li><a href="#driving">Conduite</a></li>
+                        <li><a href="#decoration">Décoration</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information Column -->
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+33 1 23 45 67 89</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>contact@solea.com</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>123 Rue de la Beauté, Paris</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 2l4 4-4 4"></path>
+                                <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                                <path d="M7 22l-4-4 4-4"></path>
+                                <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
+                            </svg>
+                            <span>WhatsApp: +33 6 12 34 56 78</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hours Column -->
+                <div class="footer-column">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li>Lundi - Vendredi: 9h - 19h</li>
+                        <li>Samedi: 10h - 18h</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media & Newsletter Column -->
+                <div class="footer-column">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom - Legal Links and Copyright -->
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="#privacy">Politique de Confidentialité</a>
+                    <span>|</span>
+                    <a href="#terms">Conditions d'Utilisation</a>
+                    <span>|</span>
+                    <a href="#cookies">Politique de Cookies</a>
+                    <span>|</span>
+                    <a href="#shipping">Livraison & Retours</a>
+                </div>
+                <p class="copyright">&copy; 2026 Solea. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
