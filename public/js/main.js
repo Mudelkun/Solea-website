@@ -196,9 +196,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Add shadow when scrolled down
             if (currentScroll > 50) {
-                header.style.boxShadow = '0 4px 16px rgba(63, 34, 64, 0.15)';
+                header.style.boxShadow = '0 10px 15px rgba(107, 45, 92, 0.15), 0 4px 6px rgba(107, 45, 92, 0.1)';
             } else {
-                header.style.boxShadow = '0 2px 8px rgba(63, 34, 64, 0.1)';
+                header.style.boxShadow = '0 4px 6px rgba(107, 45, 92, 0.1), 0 2px 4px rgba(107, 45, 92, 0.06)';
             }
             
             lastScroll = currentScroll;
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: var(--color-blackberry-cream);
+            background: linear-gradient(135deg, #6B2D5C 0%, #C47B9C 100%);
             color: white;
             border: none;
             font-size: 1.5rem;
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
             visibility: hidden;
             transition: all 0.3s ease;
             z-index: 999;
-            box-shadow: 0 4px 16px rgba(63, 34, 64, 0.2);
+            box-shadow: 0 10px 15px rgba(107, 45, 92, 0.3);
         `;
         
         document.body.appendChild(scrollBtn);
@@ -341,18 +341,18 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Hover effect
         scrollBtn.addEventListener('mouseenter', function() {
-            this.style.backgroundColor = 'var(--color-midnight-violet)';
-            this.style.transform = 'translateY(-5px)';
+            this.style.transform = 'translateY(-5px) scale(1.1)';
+            this.style.boxShadow = '0 15px 25px rgba(107, 45, 92, 0.4)';
         });
         
         scrollBtn.addEventListener('mouseleave', function() {
-            this.style.backgroundColor = 'var(--color-blackberry-cream)';
-            this.style.transform = 'translateY(0)';
+            this.style.transform = 'translateY(0) scale(1)';
+            this.style.boxShadow = '0 10px 15px rgba(107, 45, 92, 0.3)';
         });
     }
     
     // ==================== CONSOLE LOG ====================
     // Display welcome message in console
-    console.log('%cBienvenue sur Solea!', 'color: #5D355C; font-size: 20px; font-weight: bold;');
-    console.log('%cSite web développé avec passion ✨', 'color: #918687; font-size: 14px;');
+    console.log('%cBienvenue sur Solea!', 'color: #6B2D5C; font-size: 20px; font-weight: bold;');
+    console.log('%cSite web développé avec passion ✨', 'color: #C47B9C; font-size: 14px;');
 });
