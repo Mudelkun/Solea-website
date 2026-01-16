@@ -19,13 +19,14 @@ Solea-website/
 
 ## Color Palette
 
-The website uses a sophisticated color scheme:
+The website uses a sophisticated and elegant color scheme:
 
-- **Soft Blush** (#ffe5ec) - Light backgrounds and subtle accents
-- **Cotton Candy** (#ff8fab) - Primary brand color for buttons and highlights
-- **Cherry Blossom** (#ffb3c6) - Body text and borders
-- **Petal Rouge** (#fb6f92) - Dark accents and headings
-- **Pastel Pink** (#ffc2d1) - Secondary backgrounds and cards
+- **Deep Plum** (#6B2D5C) - Rich dark accent for premium feel
+- **Rose Gold** (#D4A5A5) - Sophisticated rose tone
+- **Soft Lavender** (#F5E6F1) - Subtle light backgrounds
+- **Dusty Rose** (#C47B9C) - Primary brand color
+- **Warm Cream** (#FFF8F3) - Clean background
+- **Charcoal** (#2D2D2D) - Text with strong contrast
 
 ## Typography
 
@@ -127,8 +128,13 @@ The website is fully responsive with breakpoints for:
 
 - CSS Custom Properties (variables) for maintainability
 - Flexbox and Grid for layouts
+- **Layered box-shadows for depth and elevation**
+- **Multi-layer shadow system (sm, md, lg, xl, 2xl)**
+- **Gradient overlays and backgrounds**
+- **Backdrop-filter for glassmorphism effects**
 - Smooth transitions and animations
-- Box-shadow and gradients for depth
+- **Button ripple effects**
+- **Hover scale transformations**
 - Responsive units (rem, %, vh, vw)
 
 ### Utility Classes
