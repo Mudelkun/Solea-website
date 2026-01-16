@@ -21,11 +21,11 @@ Solea-website/
 
 The website uses a sophisticated color scheme:
 
-- **Lavender Blush** (#E8E0E6) - Light backgrounds and subtle accents
-- **Blackberry Cream** (#5D355C) - Primary brand color for buttons and highlights
-- **Rosy Granite** (#918687) - Body text and borders
-- **Midnight Violet** (#3F2240) - Dark accents and headings
-- **Pale Slate** (#CBC2C5) - Secondary backgrounds and cards
+- **Soft Blush** (#ffe5ec) - Light backgrounds and subtle accents
+- **Cotton Candy** (#ff8fab) - Primary brand color for buttons and highlights
+- **Cherry Blossom** (#ffb3c6) - Body text and borders
+- **Petal Rouge** (#fb6f92) - Dark accents and headings
+- **Pastel Pink** (#ffc2d1) - Secondary backgrounds and cards
 
 ## Typography
 
