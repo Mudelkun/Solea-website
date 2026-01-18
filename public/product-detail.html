@@ -1,682 +1,1054 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Détails du produit - Solea">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Détails du produit - Solea" />
     <title>Produit - Solea</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/shop.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+  </head>
+  <body>
     <!-- ==================== HEADER / NAVIGATION ==================== -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <h1>Solea</h1>
-                    </a>
-                </div>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <h1>Solea</h1>
+            </a>
+          </div>
 
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="shop.html" class="active">Boutique</a></li>
-                    <li><a href="#school">École</a></li>
-                    <li><a href="#driving">Conduite</a></li>
-                    <li><a href="#decoration">Décoration</a></li>
-                    <li><a href="#about">À Propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+          <ul class="nav-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="shop.html" class="active">Boutique</a></li>
+            <li><a href="#school">École</a></li>
+            <li><a href="#driving">Conduite</a></li>
+            <li><a href="#decoration">Décoration</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
 
-                <div class="nav-utilities">
-                    <div class="search-box">
-                        <input type="text" placeholder="Rechercher...">
-                        <button type="submit" aria-label="Search">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="m21 21-4.35-4.35"></path>
-                            </svg>
-                        </button>
-                    </div>
+          <div class="nav-utilities">
+            <div class="search-box">
+              <input type="text" placeholder="Rechercher..." />
+              <button type="submit" aria-label="Search">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+              </button>
+            </div>
 
-                    <a href="order-list.html" class="cart-icon" aria-label="Order list">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <path d="M16 10a4 4 0 0 1-8 0"></path>
-                        </svg>
-                        <span class="cart-count">0</span>
-                    </a>
+            <a href="order-list.html" class="cart-icon" aria-label="Order list">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-count">0</span>
+            </a>
 
-                    <div class="language-toggle">
-                        <a href="#" class="active">FR</a>
-                        <span>|</span>
-                        <a href="#">EN</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+            <div class="language-toggle">
+              <a href="#" class="active">FR</a>
+              <span>|</span>
+              <a href="#">EN</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- ==================== BREADCRUMBS ==================== -->
     <div class="breadcrumbs">
-        <div class="container">
-            <a href="index.html">Accueil</a>
-            <span class="separator">/</span>
-            <a href="shop.html">Boutique</a>
-            <span class="separator">/</span>
-            <span id="product-breadcrumb">Produit</span>
-        </div>
+      <div class="container">
+        <a href="index.html">Accueil</a>
+        <span class="separator">/</span>
+        <a href="shop.html">Boutique</a>
+        <span class="separator">/</span>
+        <span id="product-breadcrumb">Produit</span>
+      </div>
     </div>
 
     <!-- ==================== PRODUCT DETAIL ==================== -->
     <section class="product-detail-section">
-        <div class="container">
-            <div class="product-detail-layout">
-                
-                <!-- Product Gallery -->
-                <div class="product-gallery">
-                    <div class="main-image">
-                        <img id="main-product-image" src="images/product-1.jpg" alt="Shampooing Hydratant Professionnel">
-                        <span class="product-badge new">Nouveau</span>
-                    </div>
-                    
-                    <div class="thumbnail-gallery">
-                        <button class="thumbnail active" data-image="images/product-1.jpg">
-                            <img src="images/product-1.jpg" alt="Vue 1">
-                        </button>
-                        <button class="thumbnail" data-image="images/product-2.jpg">
-                            <img src="images/product-2.jpg" alt="Vue 2">
-                        </button>
-                        <button class="thumbnail" data-image="images/product-3.jpg">
-                            <img src="images/product-3.jpg" alt="Vue 3">
-                        </button>
-                        <button class="thumbnail" data-image="images/product-4.jpg">
-                            <img src="images/product-4.jpg" alt="Vue 4">
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product Info -->
-                <div class="product-detail-info">
-                    <h1 class="product-title">Shampooing Hydratant Professionnel</h1>
-                    
-                    <div class="product-meta">
-                        <div class="product-rating">
-                            <span class="stars large">★★★★★</span>
-                            <span class="rating-count">(127 avis)</span>
-                        </div>
-                        <span class="sku">SKU: SH-001-250ML</span>
-                    </div>
-
-                    <p class="product-price large">24.99€</p>
-
-                    <div class="product-short-description">
-                        <p>Shampooing professionnel hydratant conçu spécialement pour les cheveux secs et déshydratés. Enrichi en huiles naturelles et vitamines, il nourrit en profondeur tout en nettoyant délicatement.</p>
-                    </div>
-
-                    <!-- Variant Selection -->
-                    <div class="variant-selection">
-                        <div class="variant-group">
-                            <label>Taille:</label>
-                            <div class="variant-options">
-                                <button class="variant-btn" data-variant="250ml" data-price="24.99">250ml</button>
-                                <button class="variant-btn active" data-variant="500ml" data-price="39.99">500ml</button>
-                                <button class="variant-btn" data-variant="1000ml" data-price="69.99">1L</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quantity -->
-                    <div class="quantity-selector">
-                        <label>Quantité:</label>
-                        <div class="quantity-controls">
-                            <button class="qty-btn minus">-</button>
-                            <input type="number" id="quantity" value="1" min="1" max="10">
-                            <button class="qty-btn plus">+</button>
-                        </div>
-                    </div>
-
-                    <!-- Add to Order -->
-                    <div class="product-actions">
-                        <button class="btn btn-primary btn-large add-to-order">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                                <line x1="3" y1="6" x2="21" y2="6"></line>
-                                <path d="M16 10a4 4 0 0 1-8 0"></path>
-                            </svg>
-                            Ajouter à la Liste de Commande
-                        </button>
-                        <button class="btn btn-outline btn-large wishlist">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                            Ajouter aux Favoris
-                        </button>
-                    </div>
-
-                    <!-- Product Features -->
-                    <div class="product-features">
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Livraison gratuite dès 50€</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Retours sous 30 jours</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Produit professionnel</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Sans parabènes ni sulfates</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="product-detail-layout">
+          <!-- Product Gallery -->
+          <div class="product-gallery">
+            <div class="main-image">
+              <img
+                id="main-product-image"
+                src="images/product-1.jpg"
+                alt="Shampooing Hydratant Professionnel"
+              />
+              <span class="product-badge new">Nouveau</span>
             </div>
 
-            <!-- Product Tabs -->
-            <div class="product-tabs">
-                <div class="tabs-header">
-                    <button class="tab-btn active" data-tab="benefits">Bénéfices</button>
-                    <button class="tab-btn" data-tab="ingredients">Ingrédients</button>
-                    <button class="tab-btn" data-tab="usage">Mode d'Emploi</button>
-                    <button class="tab-btn" data-tab="reviews">Avis (127)</button>
-                    <button class="tab-btn" data-tab="faq">FAQ</button>
-                </div>
+            <div class="thumbnail-gallery">
+              <button
+                class="thumbnail active"
+                data-image="images/product-1.jpg"
+              >
+                <img src="images/product-1.jpg" alt="Vue 1" />
+              </button>
+              <button class="thumbnail" data-image="images/product-2.jpg">
+                <img src="images/product-2.jpg" alt="Vue 2" />
+              </button>
+              <button class="thumbnail" data-image="images/product-3.jpg">
+                <img src="images/product-3.jpg" alt="Vue 3" />
+              </button>
+              <button class="thumbnail" data-image="images/product-4.jpg">
+                <img src="images/product-4.jpg" alt="Vue 4" />
+              </button>
+            </div>
+          </div>
 
-                <div class="tabs-content">
-                    <!-- Benefits Tab -->
-                    <div class="tab-panel active" id="benefits">
-                        <h3>Principaux Bénéfices</h3>
-                        <ul class="benefits-list">
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <strong>Hydratation Intense:</strong> Formule enrichie en acide hyaluronique et huiles végétales pour une hydratation profonde et durable
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <strong>Douceur et Brillance:</strong> Redonne de la brillance naturelle et de la souplesse aux cheveux secs
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <strong>Protection:</strong> Protège contre les agressions extérieures et la déshydratation
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <strong>Sans Sulfates:</strong> Formule douce sans sulfates agressifs, respectueuse du cuir chevelu
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <strong>Résultats Visibles:</strong> Cheveux visiblement plus sains et nourris dès la première utilisation
-                            </li>
-                        </ul>
-                    </div>
+          <!-- Product Info -->
+          <div class="product-detail-info">
+            <h1 class="product-title">Shampooing Hydratant Professionnel</h1>
 
-                    <!-- Ingredients Tab -->
-                    <div class="tab-panel" id="ingredients">
-                        <h3>Liste des Ingrédients</h3>
-                        <p><strong>Ingrédients Clés:</strong></p>
-                        <ul class="ingredients-list">
-                            <li><strong>Acide Hyaluronique:</strong> Hydratation en profondeur et rétention d'eau</li>
-                            <li><strong>Huile d'Argan Bio:</strong> Nutrition et brillance</li>
-                            <li><strong>Provitamine B5:</strong> Renforce et protège</li>
-                            <li><strong>Extrait d'Aloe Vera:</strong> Apaise et hydrate</li>
-                            <li><strong>Kératine Végétale:</strong> Répare et fortifie</li>
-                        </ul>
-                        <p class="ingredients-full">
-                            <strong>Composition complète (INCI):</strong><br>
-                            Aqua, Sodium Cocoyl Isethionate, Cocamidopropyl Betaine, Glycerin, Sodium Hyaluronate, Argania Spinosa Kernel Oil, Panthenol, Aloe Barbadensis Leaf Extract, Hydrolyzed Wheat Protein, Parfum, Citric Acid, Sodium Benzoate, Potassium Sorbate.
-                        </p>
-                        <div class="product-certifications">
-                            <span class="cert-badge">Sans Parabènes</span>
-                            <span class="cert-badge">Sans Sulfates</span>
-                            <span class="cert-badge">Sans Silicones</span>
-                            <span class="cert-badge">Cruelty Free</span>
-                        </div>
-                    </div>
-
-                    <!-- Usage Tab -->
-                    <div class="tab-panel" id="usage">
-                        <h3>Mode d'Emploi</h3>
-                        <div class="usage-steps">
-                            <div class="step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Application</h4>
-                                    <p>Mouillez abondamment les cheveux. Appliquez une petite quantité de shampooing sur cheveux mouillés.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Massage</h4>
-                                    <p>Massez délicatement le cuir chevelu du bout des doigts pour faire mousser. Prolongez le massage pour stimuler la circulation.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Temps de Pose</h4>
-                                    <p>Laissez agir 2-3 minutes pour permettre aux actifs de pénétrer en profondeur.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4>Rinçage</h4>
-                                    <p>Rincez abondamment à l'eau tiède. Répétez si nécessaire. Poursuivez avec l'après-shampooing de la même gamme pour des résultats optimaux.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="usage-tips">
-                            <h4>💡 Conseils d'Expert</h4>
-                            <ul>
-                                <li>Utilisez de l'eau tiède plutôt que chaude pour ne pas agresser le cuir chevelu</li>
-                                <li>Pour cheveux très secs: alternez avec un shampooing doux 1 fois sur 2</li>
-                                <li>Complétez votre routine avec notre masque hydratant hebdomadaire</li>
-                                <li>Conservez le flacon fermé à l'abri de la lumière et de la chaleur</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Reviews Tab -->
-                    <div class="tab-panel" id="reviews">
-                        <div class="reviews-summary">
-                            <div class="rating-overview">
-                                <div class="rating-score">
-                                    <span class="score">4.8</span>
-                                    <div>
-                                        <div class="stars large">★★★★★</div>
-                                        <p>Basé sur 127 avis</p>
-                                    </div>
-                                </div>
-                                <div class="rating-bars">
-                                    <div class="rating-bar-item">
-                                        <span>5 ★</span>
-                                        <div class="bar"><div class="fill" style="width: 85%"></div></div>
-                                        <span>108</span>
-                                    </div>
-                                    <div class="rating-bar-item">
-                                        <span>4 ★</span>
-                                        <div class="bar"><div class="fill" style="width: 10%"></div></div>
-                                        <span>13</span>
-                                    </div>
-                                    <div class="rating-bar-item">
-                                        <span>3 ★</span>
-                                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
-                                        <span>4</span>
-                                    </div>
-                                    <div class="rating-bar-item">
-                                        <span>2 ★</span>
-                                        <div class="bar"><div class="fill" style="width: 1%"></div></div>
-                                        <span>1</span>
-                                    </div>
-                                    <div class="rating-bar-item">
-                                        <span>1 ★</span>
-                                        <div class="bar"><div class="fill" style="width: 1%"></div></div>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reviews-list">
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <img src="images/testimonial-1.jpg" alt="Marie D." class="reviewer-avatar">
-                                    <div>
-                                        <h4>Marie D.</h4>
-                                        <div class="stars">★★★★★</div>
-                                        <span class="review-date">Il y a 2 semaines</span>
-                                    </div>
-                                    <span class="verified-badge">✓ Achat vérifié</span>
-                                </div>
-                                <h5 class="review-title">Excellent produit !</h5>
-                                <p class="review-text">J'utilise ce shampooing depuis 3 mois et mes cheveux n'ont jamais été aussi beaux. L'hydratation est vraiment au rendez-vous et l'odeur est divine. Je recommande à 100%!</p>
-                                <div class="review-helpful">
-                                    <button>👍 Utile (24)</button>
-                                </div>
-                            </div>
-
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <img src="images/testimonial-2.jpg" alt="Sophie L." class="reviewer-avatar">
-                                    <div>
-                                        <h4>Sophie L.</h4>
-                                        <div class="stars">★★★★★</div>
-                                        <span class="review-date">Il y a 1 mois</span>
-                                    </div>
-                                    <span class="verified-badge">✓ Achat vérifié</span>
-                                </div>
-                                <h5 class="review-title">Parfait pour cheveux secs</h5>
-                                <p class="review-text">Mes cheveux étaient très secs et cassants. Après seulement 2 semaines d'utilisation, j'ai vu une réelle différence. Ils sont plus doux, plus brillants et se démêlent facilement.</p>
-                                <div class="review-helpful">
-                                    <button>👍 Utile (18)</button>
-                                </div>
-                            </div>
-
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <img src="images/testimonial-3.jpg" alt="Julie M." class="reviewer-avatar">
-                                    <div>
-                                        <h4>Julie M.</h4>
-                                        <div class="stars">★★★★☆</div>
-                                        <span class="review-date">Il y a 1 mois</span>
-                                    </div>
-                                    <span class="verified-badge">✓ Achat vérifié</span>
-                                </div>
-                                <h5 class="review-title">Bon produit mais prix élevé</h5>
-                                <p class="review-text">Très bon shampooing qui fait bien son travail. La qualité est au rendez-vous mais le prix est un peu élevé. J'attends une promotion pour racheter.</p>
-                                <div class="review-helpful">
-                                    <button>👍 Utile (12)</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-outline">Voir tous les avis</button>
-                    </div>
-
-                    <!-- FAQ Tab -->
-                    <div class="tab-panel" id="faq">
-                        <h3>Questions Fréquentes</h3>
-                        <div class="faq-list">
-                            <div class="faq-item">
-                                <button class="faq-question">
-                                    <span>Ce shampooing convient-il à tous les types de cheveux ?</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer">
-                                    <p>Ce shampooing est spécialement formulé pour les cheveux secs et déshydratés. Si vous avez les cheveux gras, nous vous recommandons notre shampooing purifiant. Pour les cheveux normaux, notre shampooing quotidien sera plus adapté.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <button class="faq-question">
-                                    <span>À quelle fréquence puis-je utiliser ce shampooing ?</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer">
-                                    <p>Vous pouvez utiliser ce shampooing 2 à 3 fois par semaine. Pour les cheveux très secs, une utilisation quotidienne est possible grâce à sa formule douce sans sulfates.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <button class="faq-question">
-                                    <span>Le produit est-il testé sur les animaux ?</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer">
-                                    <p>Non, tous nos produits sont cruelty-free et ne sont jamais testés sur les animaux. Nous sommes certifiés par plusieurs organismes de protection animale.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <button class="faq-question">
-                                    <span>Combien de temps dure un flacon de 500ml ?</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer">
-                                    <p>Pour une utilisation moyenne (2-3 fois par semaine, cheveux mi-longs), un flacon de 500ml dure environ 2 à 3 mois. La durée varie selon la longueur des cheveux et la fréquence d'utilisation.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item">
-                                <button class="faq-question">
-                                    <span>Puis-je utiliser ce shampooing sur cheveux colorés ?</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </button>
-                                <div class="faq-answer">
-                                    <p>Oui, absolument ! La formule sans sulfates est douce et respecte la couleur. Elle aide même à prolonger l'éclat de votre coloration tout en hydratant vos cheveux.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="product-meta">
+              <div class="product-rating">
+                <span class="stars large">★★★★★</span>
+                <span class="rating-count">(127 avis)</span>
+              </div>
+              <span class="sku">SKU: SH-001-250ML</span>
             </div>
 
-            <!-- Related Products -->
-            <div class="related-products">
-                <h2>Produits Recommandés</h2>
-                <div class="products-carousel">
-                    <button class="carousel-btn prev" aria-label="Previous">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
+            <p class="product-price large">24.99€</p>
 
-                    <div class="carousel-track">
-                        <div class="product-card">
-                            <a href="product-detail.html?id=2" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-2.jpg" alt="Masque Capillaire">
-                                    <span class="product-badge bestseller">Bestseller</span>
-                                </div>
-                                <div class="product-info">
-                                    <h4>Masque Capillaire Réparateur</h4>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(203)</span>
-                                    </div>
-                                    <p class="product-price">32.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart">Ajouter à la Liste</button>
-                        </div>
-
-                        <div class="product-card">
-                            <a href="product-detail.html?id=3" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-3.jpg" alt="Sérum Brillance">
-                                </div>
-                                <div class="product-info">
-                                    <h4>Sérum Brillance Intense</h4>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★☆</span>
-                                        <span class="rating-count">(89)</span>
-                                    </div>
-                                    <p class="product-price">28.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart">Ajouter à la Liste</button>
-                        </div>
-
-                        <div class="product-card">
-                            <a href="product-detail.html?id=4" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-4.jpg" alt="Huile Nourrissante">
-                                </div>
-                                <div class="product-info">
-                                    <h4>Huile Nourrissante Bio</h4>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(156)</span>
-                                    </div>
-                                    <p class="product-price">35.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart">Ajouter à la Liste</button>
-                        </div>
-
-                        <div class="product-card">
-                            <a href="product-detail.html?id=5" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-1.jpg" alt="Après-Shampooing">
-                                </div>
-                                <div class="product-info">
-                                    <h4>Après-Shampooing Hydratant</h4>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(98)</span>
-                                    </div>
-                                    <p class="product-price">26.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart">Ajouter à la Liste</button>
-                        </div>
-                    </div>
-
-                    <button class="carousel-btn next" aria-label="Next">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
+            <div class="product-short-description">
+              <p>
+                Shampooing professionnel hydratant conçu spécialement pour les
+                cheveux secs et déshydratés. Enrichi en huiles naturelles et
+                vitamines, il nourrit en profondeur tout en nettoyant
+                délicatement.
+              </p>
             </div>
+
+            <!-- Variant Selection -->
+            <div class="variant-selection">
+              <div class="variant-group">
+                <label>Taille:</label>
+                <div class="variant-options">
+                  <button
+                    class="variant-btn"
+                    data-variant="250ml"
+                    data-price="24.99"
+                  >
+                    250ml
+                  </button>
+                  <button
+                    class="variant-btn active"
+                    data-variant="500ml"
+                    data-price="39.99"
+                  >
+                    500ml
+                  </button>
+                  <button
+                    class="variant-btn"
+                    data-variant="1000ml"
+                    data-price="69.99"
+                  >
+                    1L
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity-selector">
+              <label>Quantité:</label>
+              <div class="quantity-controls">
+                <button class="qty-btn minus">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10" />
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+
+            <!-- Add to Order -->
+            <div class="product-actions">
+              <button class="btn btn-primary btn-large add-to-order">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                Ajouter à la Liste de Commande
+              </button>
+              <button class="btn btn-outline btn-large wishlist">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  ></path>
+                </svg>
+                Ajouter aux Favoris
+              </button>
+            </div>
+
+            <!-- Product Features -->
+            <div class="product-features">
+              <div class="feature-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Livraison gratuite dès 50€</span>
+              </div>
+              <div class="feature-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Retours sous 30 jours</span>
+              </div>
+              <div class="feature-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Produit professionnel</span>
+              </div>
+              <div class="feature-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Sans parabènes ni sulfates</span>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+          <div class="tabs-header">
+            <button class="tab-btn active" data-tab="benefits">
+              Bénéfices
+            </button>
+            <button class="tab-btn" data-tab="ingredients">Ingrédients</button>
+            <button class="tab-btn" data-tab="usage">Mode d'Emploi</button>
+            <button class="tab-btn" data-tab="reviews">Avis (127)</button>
+            <button class="tab-btn" data-tab="faq">FAQ</button>
+          </div>
+
+          <div class="tabs-content">
+            <!-- Benefits Tab -->
+            <div class="tab-panel active" id="benefits">
+              <h3>Principaux Bénéfices</h3>
+              <ul class="benefits-list">
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <strong>Hydratation Intense:</strong> Formule enrichie en
+                  acide hyaluronique et huiles végétales pour une hydratation
+                  profonde et durable
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <strong>Douceur et Brillance:</strong> Redonne de la brillance
+                  naturelle et de la souplesse aux cheveux secs
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <strong>Protection:</strong> Protège contre les agressions
+                  extérieures et la déshydratation
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <strong>Sans Sulfates:</strong> Formule douce sans sulfates
+                  agressifs, respectueuse du cuir chevelu
+                </li>
+                <li>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <strong>Résultats Visibles:</strong> Cheveux visiblement plus
+                  sains et nourris dès la première utilisation
+                </li>
+              </ul>
+            </div>
+
+            <!-- Ingredients Tab -->
+            <div class="tab-panel" id="ingredients">
+              <h3>Liste des Ingrédients</h3>
+              <p><strong>Ingrédients Clés:</strong></p>
+              <ul class="ingredients-list">
+                <li>
+                  <strong>Acide Hyaluronique:</strong> Hydratation en profondeur
+                  et rétention d'eau
+                </li>
+                <li>
+                  <strong>Huile d'Argan Bio:</strong> Nutrition et brillance
+                </li>
+                <li><strong>Provitamine B5:</strong> Renforce et protège</li>
+                <li><strong>Extrait d'Aloe Vera:</strong> Apaise et hydrate</li>
+                <li><strong>Kératine Végétale:</strong> Répare et fortifie</li>
+              </ul>
+              <p class="ingredients-full">
+                <strong>Composition complète (INCI):</strong><br />
+                Aqua, Sodium Cocoyl Isethionate, Cocamidopropyl Betaine,
+                Glycerin, Sodium Hyaluronate, Argania Spinosa Kernel Oil,
+                Panthenol, Aloe Barbadensis Leaf Extract, Hydrolyzed Wheat
+                Protein, Parfum, Citric Acid, Sodium Benzoate, Potassium
+                Sorbate.
+              </p>
+              <div class="product-certifications">
+                <span class="cert-badge">Sans Parabènes</span>
+                <span class="cert-badge">Sans Sulfates</span>
+                <span class="cert-badge">Sans Silicones</span>
+                <span class="cert-badge">Cruelty Free</span>
+              </div>
+            </div>
+
+            <!-- Usage Tab -->
+            <div class="tab-panel" id="usage">
+              <h3>Mode d'Emploi</h3>
+              <div class="usage-steps">
+                <div class="step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4>Application</h4>
+                    <p>
+                      Mouillez abondamment les cheveux. Appliquez une petite
+                      quantité de shampooing sur cheveux mouillés.
+                    </p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h4>Massage</h4>
+                    <p>
+                      Massez délicatement le cuir chevelu du bout des doigts
+                      pour faire mousser. Prolongez le massage pour stimuler la
+                      circulation.
+                    </p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h4>Temps de Pose</h4>
+                    <p>
+                      Laissez agir 2-3 minutes pour permettre aux actifs de
+                      pénétrer en profondeur.
+                    </p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h4>Rinçage</h4>
+                    <p>
+                      Rincez abondamment à l'eau tiède. Répétez si nécessaire.
+                      Poursuivez avec l'après-shampooing de la même gamme pour
+                      des résultats optimaux.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="usage-tips">
+                <h4>💡 Conseils d'Expert</h4>
+                <ul>
+                  <li>
+                    Utilisez de l'eau tiède plutôt que chaude pour ne pas
+                    agresser le cuir chevelu
+                  </li>
+                  <li>
+                    Pour cheveux très secs: alternez avec un shampooing doux 1
+                    fois sur 2
+                  </li>
+                  <li>
+                    Complétez votre routine avec notre masque hydratant
+                    hebdomadaire
+                  </li>
+                  <li>
+                    Conservez le flacon fermé à l'abri de la lumière et de la
+                    chaleur
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div class="tab-panel" id="reviews">
+              <div class="reviews-summary">
+                <div class="rating-overview">
+                  <div class="rating-score">
+                    <span class="score">4.8</span>
+                    <div>
+                      <div class="stars large">★★★★★</div>
+                      <p>Basé sur 127 avis</p>
+                    </div>
+                  </div>
+                  <div class="rating-bars">
+                    <div class="rating-bar-item">
+                      <span>5 ★</span>
+                      <div class="bar">
+                        <div class="fill" style="width: 85%"></div>
+                      </div>
+                      <span>108</span>
+                    </div>
+                    <div class="rating-bar-item">
+                      <span>4 ★</span>
+                      <div class="bar">
+                        <div class="fill" style="width: 10%"></div>
+                      </div>
+                      <span>13</span>
+                    </div>
+                    <div class="rating-bar-item">
+                      <span>3 ★</span>
+                      <div class="bar">
+                        <div class="fill" style="width: 3%"></div>
+                      </div>
+                      <span>4</span>
+                    </div>
+                    <div class="rating-bar-item">
+                      <span>2 ★</span>
+                      <div class="bar">
+                        <div class="fill" style="width: 1%"></div>
+                      </div>
+                      <span>1</span>
+                    </div>
+                    <div class="rating-bar-item">
+                      <span>1 ★</span>
+                      <div class="bar">
+                        <div class="fill" style="width: 1%"></div>
+                      </div>
+                      <span>1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews-list">
+                <div class="review-item">
+                  <div class="review-header">
+                    <img
+                      src="images/testimonial-1.jpg"
+                      alt="Marie D."
+                      class="reviewer-avatar"
+                    />
+                    <div>
+                      <h4>Marie D.</h4>
+                      <div class="stars">★★★★★</div>
+                      <span class="review-date">Il y a 2 semaines</span>
+                    </div>
+                    <span class="verified-badge">✓ Achat vérifié</span>
+                  </div>
+                  <h5 class="review-title">Excellent produit !</h5>
+                  <p class="review-text">
+                    J'utilise ce shampooing depuis 3 mois et mes cheveux n'ont
+                    jamais été aussi beaux. L'hydratation est vraiment au
+                    rendez-vous et l'odeur est divine. Je recommande à 100%!
+                  </p>
+                  <div class="review-helpful">
+                    <button>👍 Utile (24)</button>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-header">
+                    <img
+                      src="images/testimonial-2.jpg"
+                      alt="Sophie L."
+                      class="reviewer-avatar"
+                    />
+                    <div>
+                      <h4>Sophie L.</h4>
+                      <div class="stars">★★★★★</div>
+                      <span class="review-date">Il y a 1 mois</span>
+                    </div>
+                    <span class="verified-badge">✓ Achat vérifié</span>
+                  </div>
+                  <h5 class="review-title">Parfait pour cheveux secs</h5>
+                  <p class="review-text">
+                    Mes cheveux étaient très secs et cassants. Après seulement 2
+                    semaines d'utilisation, j'ai vu une réelle différence. Ils
+                    sont plus doux, plus brillants et se démêlent facilement.
+                  </p>
+                  <div class="review-helpful">
+                    <button>👍 Utile (18)</button>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-header">
+                    <img
+                      src="images/testimonial-3.jpg"
+                      alt="Julie M."
+                      class="reviewer-avatar"
+                    />
+                    <div>
+                      <h4>Julie M.</h4>
+                      <div class="stars">★★★★☆</div>
+                      <span class="review-date">Il y a 1 mois</span>
+                    </div>
+                    <span class="verified-badge">✓ Achat vérifié</span>
+                  </div>
+                  <h5 class="review-title">Bon produit mais prix élevé</h5>
+                  <p class="review-text">
+                    Très bon shampooing qui fait bien son travail. La qualité
+                    est au rendez-vous mais le prix est un peu élevé. J'attends
+                    une promotion pour racheter.
+                  </p>
+                  <div class="review-helpful">
+                    <button>👍 Utile (12)</button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-outline">Voir tous les avis</button>
+            </div>
+
+            <!-- FAQ Tab -->
+            <div class="tab-panel" id="faq">
+              <h3>Questions Fréquentes</h3>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span
+                      >Ce shampooing convient-il à tous les types de cheveux
+                      ?</span
+                    >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Ce shampooing est spécialement formulé pour les cheveux
+                      secs et déshydratés. Si vous avez les cheveux gras, nous
+                      vous recommandons notre shampooing purifiant. Pour les
+                      cheveux normaux, notre shampooing quotidien sera plus
+                      adapté.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span
+                      >À quelle fréquence puis-je utiliser ce shampooing ?</span
+                    >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Vous pouvez utiliser ce shampooing 2 à 3 fois par semaine.
+                      Pour les cheveux très secs, une utilisation quotidienne
+                      est possible grâce à sa formule douce sans sulfates.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span>Le produit est-il testé sur les animaux ?</span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Non, tous nos produits sont cruelty-free et ne sont jamais
+                      testés sur les animaux. Nous sommes certifiés par
+                      plusieurs organismes de protection animale.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span>Combien de temps dure un flacon de 500ml ?</span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Pour une utilisation moyenne (2-3 fois par semaine,
+                      cheveux mi-longs), un flacon de 500ml dure environ 2 à 3
+                      mois. La durée varie selon la longueur des cheveux et la
+                      fréquence d'utilisation.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span
+                      >Puis-je utiliser ce shampooing sur cheveux colorés
+                      ?</span
+                    >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Oui, absolument ! La formule sans sulfates est douce et
+                      respecte la couleur. Elle aide même à prolonger l'éclat de
+                      votre coloration tout en hydratant vos cheveux.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+          <h2>Produits Recommandés</h2>
+          <div class="products-carousel">
+            <button class="carousel-btn prev" aria-label="Previous">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="carousel-track">
+              <div class="product-card">
+                <a href="product-detail.html?id=2" class="product-link">
+                  <div class="product-image">
+                    <img src="images/product-2.jpg" alt="Masque Capillaire" />
+                    <span class="product-badge bestseller">Bestseller</span>
+                  </div>
+                  <div class="product-info">
+                    <h4>Masque Capillaire Réparateur</h4>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(203)</span>
+                    </div>
+                    <p class="product-price">32.99€</p>
+                  </div>
+                </a>
+                <button class="btn btn-small btn-primary add-to-cart">
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <div class="product-card">
+                <a href="product-detail.html?id=3" class="product-link">
+                  <div class="product-image">
+                    <img src="images/product-3.jpg" alt="Sérum Brillance" />
+                  </div>
+                  <div class="product-info">
+                    <h4>Sérum Brillance Intense</h4>
+                    <div class="product-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span class="rating-count">(89)</span>
+                    </div>
+                    <p class="product-price">28.99€</p>
+                  </div>
+                </a>
+                <button class="btn btn-small btn-primary add-to-cart">
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <div class="product-card">
+                <a href="product-detail.html?id=4" class="product-link">
+                  <div class="product-image">
+                    <img src="images/product-4.jpg" alt="Huile Nourrissante" />
+                  </div>
+                  <div class="product-info">
+                    <h4>Huile Nourrissante Bio</h4>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(156)</span>
+                    </div>
+                    <p class="product-price">35.99€</p>
+                  </div>
+                </a>
+                <button class="btn btn-small btn-primary add-to-cart">
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <div class="product-card">
+                <a href="product-detail.html?id=5" class="product-link">
+                  <div class="product-image">
+                    <img src="images/product-1.jpg" alt="Après-Shampooing" />
+                  </div>
+                  <div class="product-info">
+                    <h4>Après-Shampooing Hydratant</h4>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(98)</span>
+                    </div>
+                    <p class="product-price">26.99€</p>
+                  </div>
+                </a>
+                <button class="btn btn-small btn-primary add-to-cart">
+                  Ajouter à la Liste
+                </button>
+              </div>
+            </div>
+
+            <button class="carousel-btn next" aria-label="Next">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>Liens Rapides</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="shop.html">Boutique</a></li>
-                        <li><a href="#school">École</a></li>
-                        <li><a href="#driving">Conduite</a></li>
-                        <li><a href="#decoration">Décoration</a></li>
-                        <li><a href="#about">À Propos</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Liens Rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="shop.html">Boutique</a></li>
+              <li><a href="#school">École</a></li>
+              <li><a href="#driving">Conduite</a></li>
+              <li><a href="#decoration">Décoration</a></li>
+              <li><a href="#about">À Propos</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul class="contact-info">
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <span>+33 1 23 45 67 89</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>contact@solea.com</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>123 Rue de la Beauté, Paris</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 2l4 4-4 4"></path>
-                                <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
-                                <path d="M7 22l-4-4 4-4"></path>
-                                <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
-                            </svg>
-                            <span>WhatsApp: +33 6 12 34 56 78</span>
-                        </li>
-                    </ul>
-                </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>+33 1 23 45 67 89</span>
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>contact@solea.com</span>
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>123 Rue de la Beauté, Paris</span>
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M17 2l4 4-4 4"></path>
+                  <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                  <path d="M7 22l-4-4 4-4"></path>
+                  <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
+                </svg>
+                <span>WhatsApp: +33 6 12 34 56 78</span>
+              </li>
+            </ul>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Horaires</h4>
-                    <ul>
-                        <li>Lundi - Vendredi: 9h - 19h</li>
-                        <li>Samedi: 10h - 18h</li>
-                        <li>Dimanche: Fermé</li>
-                    </ul>
-                </div>
+          <div class="footer-column">
+            <h4>Horaires</h4>
+            <ul>
+              <li>Lundi - Vendredi: 9h - 19h</li>
+              <li>Samedi: 10h - 18h</li>
+              <li>Dimanche: Fermé</li>
+            </ul>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"></line>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  ></path>
+                  <line
+                    x1="17.5"
+                    y1="6.5"
+                    x2="17.51"
+                    y2="6.5"
+                    stroke="white"
+                    stroke-width="2"
+                  ></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
             </div>
-
-            <div class="footer-bottom">
-                <div class="legal-links">
-                    <a href="#privacy">Politique de Confidentialité</a>
-                    <span>|</span>
-                    <a href="#terms">Conditions d'Utilisation</a>
-                    <span>|</span>
-                    <a href="#cookies">Politique de Cookies</a>
-                    <span>|</span>
-                    <a href="#shipping">Livraison & Retours</a>
-                </div>
-                <p class="copyright">&copy; 2026 Solea. Tous droits réservés.</p>
-            </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="legal-links">
+            <a href="#privacy">Politique de Confidentialité</a>
+            <span>|</span>
+            <a href="#terms">Conditions d'Utilisation</a>
+            <span>|</span>
+            <a href="#cookies">Politique de Cookies</a>
+            <span>|</span>
+            <a href="#shipping">Livraison & Retours</a>
+          </div>
+          <p class="copyright">&copy; 2026 Solea. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/shop.js"></script>
-    <script src="js/product-detail.js"></script>
-</body>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/shop.js"></script>
+    <script defer src="js/product-detail.js"></script>
+  </body>
 </html>

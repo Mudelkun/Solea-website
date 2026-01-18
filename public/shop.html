@@ -1,589 +1,873 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boutique Solea - Produits capillaires professionnels de qualité supérieure">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Boutique Solea - Produits capillaires professionnels de qualité supérieure"
+    />
     <title>Boutique - Solea</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/shop.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+  </head>
+  <body>
     <!-- ==================== HEADER / NAVIGATION ==================== -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <h1>Solea</h1>
-                    </a>
-                </div>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <h1>Solea</h1>
+            </a>
+          </div>
 
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="shop.html" class="active">Boutique</a></li>
-                    <li><a href="#school">École</a></li>
-                    <li><a href="#driving">Conduite</a></li>
-                    <li><a href="#decoration">Décoration</a></li>
-                    <li><a href="#about">À Propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+          <ul class="nav-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="shop.html" class="active">Boutique</a></li>
+            <li><a href="#school">École</a></li>
+            <li><a href="#driving">Conduite</a></li>
+            <li><a href="#decoration">Décoration</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
 
-                <div class="nav-utilities">
-                    <div class="search-box">
-                        <input type="text" placeholder="Rechercher...">
-                        <button type="submit" aria-label="Search">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="m21 21-4.35-4.35"></path>
-                            </svg>
-                        </button>
-                    </div>
+          <div class="nav-utilities">
+            <div class="search-box">
+              <input type="text" placeholder="Rechercher..." />
+              <button type="submit" aria-label="Search">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+              </button>
+            </div>
 
-                    <a href="order-list.html" class="cart-icon" aria-label="Order list">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <path d="M16 10a4 4 0 0 1-8 0"></path>
-                        </svg>
-                        <span class="cart-count">0</span>
-                    </a>
+            <a href="order-list.html" class="cart-icon" aria-label="Order list">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-count">0</span>
+            </a>
 
-                    <div class="language-toggle">
-                        <a href="#" class="active">FR</a>
-                        <span>|</span>
-                        <a href="#">EN</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+            <div class="language-toggle">
+              <a href="#" class="active">FR</a>
+              <span>|</span>
+              <a href="#">EN</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- ==================== BREADCRUMBS ==================== -->
     <div class="breadcrumbs">
-        <div class="container">
-            <a href="index.html">Accueil</a>
-            <span class="separator">/</span>
-            <span>Boutique</span>
-        </div>
+      <div class="container">
+        <a href="index.html">Accueil</a>
+        <span class="separator">/</span>
+        <span>Boutique</span>
+      </div>
     </div>
 
     <!-- ==================== SHOP HEADER ==================== -->
     <section class="shop-header">
-        <div class="container">
-            <h1>Boutique Produits Capillaires</h1>
-            <p>Découvrez notre sélection exclusive de produits professionnels pour tous types de cheveux</p>
-        </div>
+      <div class="container">
+        <h1>Boutique Produits Capillaires</h1>
+        <p>
+          Découvrez notre sélection exclusive de produits professionnels pour
+          tous types de cheveux
+        </p>
+      </div>
     </section>
 
     <!-- ==================== FILTERS & PRODUCTS ==================== -->
     <section class="shop-section">
-        <div class="container">
-            
-            <!-- Mobile Filter Toggle -->
-            <button class="mobile-filter-toggle">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="4" y1="6" x2="20" y2="6"></line>
-                    <line x1="4" y1="12" x2="20" y2="12"></line>
-                    <line x1="4" y1="18" x2="20" y2="18"></line>
-                </svg>
-                Filtres
-            </button>
+      <div class="container">
+        <!-- Mobile Filter Toggle -->
+        <button class="mobile-filter-toggle">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+          Filtres
+        </button>
 
-            <div class="shop-layout">
-                
-                <!-- ==================== SIDEBAR FILTERS ==================== -->
-                <aside class="shop-sidebar">
-                    <div class="filter-section">
-                        <h3>Catégories</h3>
-                        <div class="filter-group">
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="category" value="all" checked>
-                                <span>Tous les produits</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="category" value="shampoo">
-                                <span>Shampoings</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="category" value="conditioner">
-                                <span>Après-shampoings</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="category" value="mask">
-                                <span>Masques</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="category" value="serum">
-                                <span>Sérums & Huiles</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="category" value="styling">
-                                <span>Coiffage</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="filter-section">
-                        <h3>Type de Cheveux</h3>
-                        <div class="filter-group">
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="hairtype" value="dry">
-                                <span>Cheveux Secs</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="hairtype" value="oily">
-                                <span>Cheveux Gras</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="hairtype" value="normal">
-                                <span>Cheveux Normaux</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="hairtype" value="curly">
-                                <span>Cheveux Bouclés</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="hairtype" value="damaged">
-                                <span>Cheveux Abîmés</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="filter-section">
-                        <h3>Prix</h3>
-                        <div class="filter-group">
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="price" value="0-20">
-                                <span>Moins de 20€</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="price" value="20-40">
-                                <span>20€ - 40€</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="price" value="40-60">
-                                <span>40€ - 60€</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="price" value="60+">
-                                <span>Plus de 60€</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="filter-section">
-                        <h3>Spécial</h3>
-                        <div class="filter-group">
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="special" value="bestseller">
-                                <span>⭐ Bestsellers</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="special" value="new">
-                                <span>🎉 Nouveautés</span>
-                            </label>
-                            <label class="filter-checkbox">
-                                <input type="checkbox" name="special" value="bio">
-                                <span>🌿 Bio & Naturel</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-outline filter-reset">Réinitialiser</button>
-                </aside>
-
-                <!-- ==================== PRODUCTS GRID ==================== -->
-                <div class="shop-main">
-                    
-                    <!-- Sort & Results Bar -->
-                    <div class="shop-toolbar">
-                        <p class="results-count"><span id="product-count">24</span> produits trouvés</p>
-                        
-                        <div class="sort-select">
-                            <label for="sort">Trier par:</label>
-                            <select id="sort" name="sort">
-                                <option value="popularity">Popularité</option>
-                                <option value="newest">Nouveautés</option>
-                                <option value="price-asc">Prix croissant</option>
-                                <option value="price-desc">Prix décroissant</option>
-                                <option value="rating">Meilleures notes</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Products Grid -->
-                    <div class="products-grid" id="products-grid">
-                        
-                        <!-- Product 1 -->
-                        <div class="product-card" data-category="shampoo" data-hairtype="dry" data-price="24.99" data-special="new">
-                            <a href="product-detail.html?id=1" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-1.jpg" alt="Shampooing Hydratant Professionnel">
-                                    <span class="product-badge new">Nouveau</span>
-                                </div>
-                                <div class="product-info">
-                                    <h3>Shampooing Hydratant Professionnel</h3>
-                                    <p class="product-description">Pour cheveux secs et déshydratés</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(127)</span>
-                                    </div>
-                                    <p class="product-price">24.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="1">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 2 -->
-                        <div class="product-card" data-category="mask" data-hairtype="damaged" data-price="32.99" data-special="bestseller">
-                            <a href="product-detail.html?id=2" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-2.jpg" alt="Masque Capillaire Réparateur">
-                                    <span class="product-badge bestseller">Bestseller</span>
-                                </div>
-                                <div class="product-info">
-                                    <h3>Masque Capillaire Réparateur</h3>
-                                    <p class="product-description">Répare intensément les cheveux abîmés</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(203)</span>
-                                    </div>
-                                    <p class="product-price">32.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="2">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 3 -->
-                        <div class="product-card" data-category="serum" data-hairtype="normal" data-price="28.99">
-                            <a href="product-detail.html?id=3" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-3.jpg" alt="Sérum Brillance Intense">
-                                </div>
-                                <div class="product-info">
-                                    <h3>Sérum Brillance Intense</h3>
-                                    <p class="product-description">Pour une brillance éclatante</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★☆</span>
-                                        <span class="rating-count">(89)</span>
-                                    </div>
-                                    <p class="product-price">28.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="3">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 4 -->
-                        <div class="product-card" data-category="serum" data-hairtype="dry,damaged" data-price="35.99" data-special="bio">
-                            <a href="product-detail.html?id=4" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-4.jpg" alt="Huile Nourrissante Bio">
-                                    <span class="product-badge bio">Bio</span>
-                                </div>
-                                <div class="product-info">
-                                    <h3>Huile Nourrissante Bio</h3>
-                                    <p class="product-description">100% naturelle et bio-certifiée</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(156)</span>
-                                    </div>
-                                    <p class="product-price">35.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="4">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 5 -->
-                        <div class="product-card" data-category="conditioner" data-hairtype="curly" data-price="26.99">
-                            <a href="product-detail.html?id=5" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-1.jpg" alt="Après-Shampooing Boucles Définies">
-                                </div>
-                                <div class="product-info">
-                                    <h3>Après-Shampooing Boucles Définies</h3>
-                                    <p class="product-description">Définit et hydrate les boucles</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(98)</span>
-                                    </div>
-                                    <p class="product-price">26.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="5">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 6 -->
-                        <div class="product-card" data-category="styling" data-hairtype="normal,oily" data-price="22.99">
-                            <a href="product-detail.html?id=6" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-2.jpg" alt="Spray Coiffant Volume">
-                                </div>
-                                <div class="product-info">
-                                    <h3>Spray Coiffant Volume</h3>
-                                    <p class="product-description">Volume et tenue longue durée</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★☆</span>
-                                        <span class="rating-count">(76)</span>
-                                    </div>
-                                    <p class="product-price">22.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="6">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 7 -->
-                        <div class="product-card" data-category="shampoo" data-hairtype="oily" data-price="23.99">
-                            <a href="product-detail.html?id=7" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-3.jpg" alt="Shampooing Purifiant">
-                                </div>
-                                <div class="product-info">
-                                    <h3>Shampooing Purifiant</h3>
-                                    <p class="product-description">Contrôle l'excès de sébum</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(112)</span>
-                                    </div>
-                                    <p class="product-price">23.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="7">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 8 -->
-                        <div class="product-card" data-category="mask" data-hairtype="curly,dry" data-price="38.99" data-special="new,bio">
-                            <a href="product-detail.html?id=8" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-4.jpg" alt="Masque Nutrition Intense Bio">
-                                    <span class="product-badge new">Nouveau</span>
-                                </div>
-                                <div class="product-info">
-                                    <h3>Masque Nutrition Intense Bio</h3>
-                                    <p class="product-description">Formule bio ultra-nourrissante</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(64)</span>
-                                    </div>
-                                    <p class="product-price">38.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="8">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 9 -->
-                        <div class="product-card" data-category="serum" data-hairtype="damaged" data-price="42.99" data-special="bestseller">
-                            <a href="product-detail.html?id=9" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-1.jpg" alt="Sérum Réparateur Professionnel">
-                                    <span class="product-badge bestseller">Bestseller</span>
-                                </div>
-                                <div class="product-info">
-                                    <h3>Sérum Réparateur Professionnel</h3>
-                                    <p class="product-description">Réparation en profondeur</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(187)</span>
-                                    </div>
-                                    <p class="product-price">42.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="9">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 10 -->
-                        <div class="product-card" data-category="styling" data-hairtype="curly" data-price="29.99">
-                            <a href="product-detail.html?id=10" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-2.jpg" alt="Gel Définition Boucles">
-                                </div>
-                                <div class="product-info">
-                                    <h3>Gel Définition Boucles</h3>
-                                    <p class="product-description">Définit sans alourdir</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★☆</span>
-                                        <span class="rating-count">(91)</span>
-                                    </div>
-                                    <p class="product-price">29.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="10">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 11 -->
-                        <div class="product-card" data-category="conditioner" data-hairtype="normal" data-price="25.99">
-                            <a href="product-detail.html?id=11" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-3.jpg" alt="Après-Shampooing Quotidien">
-                                </div>
-                                <div class="product-info">
-                                    <h3>Après-Shampooing Quotidien</h3>
-                                    <p class="product-description">Usage quotidien, tous types</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(143)</span>
-                                    </div>
-                                    <p class="product-price">25.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="11">Ajouter à la Liste</button>
-                        </div>
-
-                        <!-- Product 12 -->
-                        <div class="product-card" data-category="shampoo" data-hairtype="damaged" data-price="27.99" data-special="bestseller">
-                            <a href="product-detail.html?id=12" class="product-link">
-                                <div class="product-image">
-                                    <img src="images/product-4.jpg" alt="Shampooing Réparateur Intense">
-                                    <span class="product-badge bestseller">Bestseller</span>
-                                </div>
-                                <div class="product-info">
-                                    <h3>Shampooing Réparateur Intense</h3>
-                                    <p class="product-description">Pour cheveux très abîmés</p>
-                                    <div class="product-rating">
-                                        <span class="stars">★★★★★</span>
-                                        <span class="rating-count">(201)</span>
-                                    </div>
-                                    <p class="product-price">27.99€</p>
-                                </div>
-                            </a>
-                            <button class="btn btn-small btn-primary add-to-cart" data-product-id="12">Ajouter à la Liste</button>
-                        </div>
-
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="pagination">
-                        <button class="pagination-btn" disabled>←</button>
-                        <button class="pagination-btn active">1</button>
-                        <button class="pagination-btn">2</button>
-                        <button class="pagination-btn">3</button>
-                        <button class="pagination-btn">→</button>
-                    </div>
-
-                </div>
+        <div class="shop-layout">
+          <!-- ==================== SIDEBAR FILTERS ==================== -->
+          <aside class="shop-sidebar">
+            <div class="filter-section">
+              <h3>Catégories</h3>
+              <div class="filter-group">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="all" checked />
+                  <span>Tous les produits</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="shampoo" />
+                  <span>Shampoings</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="conditioner" />
+                  <span>Après-shampoings</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="mask" />
+                  <span>Masques</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="serum" />
+                  <span>Sérums & Huiles</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="styling" />
+                  <span>Coiffage</span>
+                </label>
+              </div>
             </div>
+
+            <div class="filter-section">
+              <h3>Type de Cheveux</h3>
+              <div class="filter-group">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="hairtype" value="dry" />
+                  <span>Cheveux Secs</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="hairtype" value="oily" />
+                  <span>Cheveux Gras</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="hairtype" value="normal" />
+                  <span>Cheveux Normaux</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="hairtype" value="curly" />
+                  <span>Cheveux Bouclés</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="hairtype" value="damaged" />
+                  <span>Cheveux Abîmés</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Prix</h3>
+              <div class="filter-group">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="0-20" />
+                  <span>Moins de 20€</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="20-40" />
+                  <span>20€ - 40€</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="40-60" />
+                  <span>40€ - 60€</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="60+" />
+                  <span>Plus de 60€</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Spécial</h3>
+              <div class="filter-group">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="special" value="bestseller" />
+                  <span>⭐ Bestsellers</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="special" value="new" />
+                  <span>🎉 Nouveautés</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="special" value="bio" />
+                  <span>🌿 Bio & Naturel</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-outline filter-reset">Réinitialiser</button>
+          </aside>
+
+          <!-- ==================== PRODUCTS GRID ==================== -->
+          <div class="shop-main">
+            <!-- Sort & Results Bar -->
+            <div class="shop-toolbar">
+              <p class="results-count">
+                <span id="product-count">24</span> produits trouvés
+              </p>
+
+              <div class="sort-select">
+                <label for="sort">Trier par:</label>
+                <select id="sort" name="sort">
+                  <option value="popularity">Popularité</option>
+                  <option value="newest">Nouveautés</option>
+                  <option value="price-asc">Prix croissant</option>
+                  <option value="price-desc">Prix décroissant</option>
+                  <option value="rating">Meilleures notes</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+              <!-- Product 1 -->
+              <div
+                class="product-card"
+                data-category="shampoo"
+                data-hairtype="dry"
+                data-price="24.99"
+                data-special="new"
+              >
+                <a href="product-detail.html?id=1" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-1.jpg"
+                      alt="Shampooing Hydratant Professionnel"
+                    />
+                    <span class="product-badge new">Nouveau</span>
+                  </div>
+                  <div class="product-info">
+                    <h3>Shampooing Hydratant Professionnel</h3>
+                    <p class="product-description">
+                      Pour cheveux secs et déshydratés
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(127)</span>
+                    </div>
+                    <p class="product-price">24.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="1"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 2 -->
+              <div
+                class="product-card"
+                data-category="mask"
+                data-hairtype="damaged"
+                data-price="32.99"
+                data-special="bestseller"
+              >
+                <a href="product-detail.html?id=2" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-2.jpg"
+                      alt="Masque Capillaire Réparateur"
+                    />
+                    <span class="product-badge bestseller">Bestseller</span>
+                  </div>
+                  <div class="product-info">
+                    <h3>Masque Capillaire Réparateur</h3>
+                    <p class="product-description">
+                      Répare intensément les cheveux abîmés
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(203)</span>
+                    </div>
+                    <p class="product-price">32.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="2"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 3 -->
+              <div
+                class="product-card"
+                data-category="serum"
+                data-hairtype="normal"
+                data-price="28.99"
+              >
+                <a href="product-detail.html?id=3" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-3.jpg"
+                      alt="Sérum Brillance Intense"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Sérum Brillance Intense</h3>
+                    <p class="product-description">
+                      Pour une brillance éclatante
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span class="rating-count">(89)</span>
+                    </div>
+                    <p class="product-price">28.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="3"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 4 -->
+              <div
+                class="product-card"
+                data-category="serum"
+                data-hairtype="dry,damaged"
+                data-price="35.99"
+                data-special="bio"
+              >
+                <a href="product-detail.html?id=4" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-4.jpg"
+                      alt="Huile Nourrissante Bio"
+                    />
+                    <span class="product-badge bio">Bio</span>
+                  </div>
+                  <div class="product-info">
+                    <h3>Huile Nourrissante Bio</h3>
+                    <p class="product-description">
+                      100% naturelle et bio-certifiée
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(156)</span>
+                    </div>
+                    <p class="product-price">35.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="4"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 5 -->
+              <div
+                class="product-card"
+                data-category="conditioner"
+                data-hairtype="curly"
+                data-price="26.99"
+              >
+                <a href="product-detail.html?id=5" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-1.jpg"
+                      alt="Après-Shampooing Boucles Définies"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Après-Shampooing Boucles Définies</h3>
+                    <p class="product-description">
+                      Définit et hydrate les boucles
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(98)</span>
+                    </div>
+                    <p class="product-price">26.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="5"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 6 -->
+              <div
+                class="product-card"
+                data-category="styling"
+                data-hairtype="normal,oily"
+                data-price="22.99"
+              >
+                <a href="product-detail.html?id=6" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-2.jpg"
+                      alt="Spray Coiffant Volume"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Spray Coiffant Volume</h3>
+                    <p class="product-description">
+                      Volume et tenue longue durée
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span class="rating-count">(76)</span>
+                    </div>
+                    <p class="product-price">22.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="6"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 7 -->
+              <div
+                class="product-card"
+                data-category="shampoo"
+                data-hairtype="oily"
+                data-price="23.99"
+              >
+                <a href="product-detail.html?id=7" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-3.jpg"
+                      alt="Shampooing Purifiant"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Shampooing Purifiant</h3>
+                    <p class="product-description">Contrôle l'excès de sébum</p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(112)</span>
+                    </div>
+                    <p class="product-price">23.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="7"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 8 -->
+              <div
+                class="product-card"
+                data-category="mask"
+                data-hairtype="curly,dry"
+                data-price="38.99"
+                data-special="new,bio"
+              >
+                <a href="product-detail.html?id=8" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-4.jpg"
+                      alt="Masque Nutrition Intense Bio"
+                    />
+                    <span class="product-badge new">Nouveau</span>
+                  </div>
+                  <div class="product-info">
+                    <h3>Masque Nutrition Intense Bio</h3>
+                    <p class="product-description">
+                      Formule bio ultra-nourrissante
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(64)</span>
+                    </div>
+                    <p class="product-price">38.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="8"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 9 -->
+              <div
+                class="product-card"
+                data-category="serum"
+                data-hairtype="damaged"
+                data-price="42.99"
+                data-special="bestseller"
+              >
+                <a href="product-detail.html?id=9" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-1.jpg"
+                      alt="Sérum Réparateur Professionnel"
+                    />
+                    <span class="product-badge bestseller">Bestseller</span>
+                  </div>
+                  <div class="product-info">
+                    <h3>Sérum Réparateur Professionnel</h3>
+                    <p class="product-description">Réparation en profondeur</p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(187)</span>
+                    </div>
+                    <p class="product-price">42.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="9"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 10 -->
+              <div
+                class="product-card"
+                data-category="styling"
+                data-hairtype="curly"
+                data-price="29.99"
+              >
+                <a href="product-detail.html?id=10" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-2.jpg"
+                      alt="Gel Définition Boucles"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Gel Définition Boucles</h3>
+                    <p class="product-description">Définit sans alourdir</p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span class="rating-count">(91)</span>
+                    </div>
+                    <p class="product-price">29.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="10"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 11 -->
+              <div
+                class="product-card"
+                data-category="conditioner"
+                data-hairtype="normal"
+                data-price="25.99"
+              >
+                <a href="product-detail.html?id=11" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-3.jpg"
+                      alt="Après-Shampooing Quotidien"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Après-Shampooing Quotidien</h3>
+                    <p class="product-description">
+                      Usage quotidien, tous types
+                    </p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(143)</span>
+                    </div>
+                    <p class="product-price">25.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="11"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+
+              <!-- Product 12 -->
+              <div
+                class="product-card"
+                data-category="shampoo"
+                data-hairtype="damaged"
+                data-price="27.99"
+                data-special="bestseller"
+              >
+                <a href="product-detail.html?id=12" class="product-link">
+                  <div class="product-image">
+                    <img
+                      src="images/product-4.jpg"
+                      alt="Shampooing Réparateur Intense"
+                    />
+                    <span class="product-badge bestseller">Bestseller</span>
+                  </div>
+                  <div class="product-info">
+                    <h3>Shampooing Réparateur Intense</h3>
+                    <p class="product-description">Pour cheveux très abîmés</p>
+                    <div class="product-rating">
+                      <span class="stars">★★★★★</span>
+                      <span class="rating-count">(201)</span>
+                    </div>
+                    <p class="product-price">27.99€</p>
+                  </div>
+                </a>
+                <button
+                  class="btn btn-small btn-primary add-to-cart"
+                  data-product-id="12"
+                >
+                  Ajouter à la Liste
+                </button>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <button class="pagination-btn" disabled>←</button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">→</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>Liens Rapides</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="shop.html">Boutique</a></li>
-                        <li><a href="#school">École</a></li>
-                        <li><a href="#driving">Conduite</a></li>
-                        <li><a href="#decoration">Décoration</a></li>
-                        <li><a href="#about">À Propos</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Liens Rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="shop.html">Boutique</a></li>
+              <li><a href="#school">École</a></li>
+              <li><a href="#driving">Conduite</a></li>
+              <li><a href="#decoration">Décoration</a></li>
+              <li><a href="#about">À Propos</a></li>
+            </ul>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul class="contact-info">
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <span>+33 1 23 45 67 89</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>contact@solea.com</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>123 Rue de la Beauté, Paris</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 2l4 4-4 4"></path>
-                                <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
-                                <path d="M7 22l-4-4 4-4"></path>
-                                <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
-                            </svg>
-                            <span>WhatsApp: +33 6 12 34 56 78</span>
-                        </li>
-                    </ul>
-                </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>+33 1 23 45 67 89</span>
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>contact@solea.com</span>
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>123 Rue de la Beauté, Paris</span>
+              </li>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M17 2l4 4-4 4"></path>
+                  <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                  <path d="M7 22l-4-4 4-4"></path>
+                  <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
+                </svg>
+                <span>WhatsApp: +33 6 12 34 56 78</span>
+              </li>
+            </ul>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Horaires</h4>
-                    <ul>
-                        <li>Lundi - Vendredi: 9h - 19h</li>
-                        <li>Samedi: 10h - 18h</li>
-                        <li>Dimanche: Fermé</li>
-                    </ul>
-                </div>
+          <div class="footer-column">
+            <h4>Horaires</h4>
+            <ul>
+              <li>Lundi - Vendredi: 9h - 19h</li>
+              <li>Samedi: 10h - 18h</li>
+              <li>Dimanche: Fermé</li>
+            </ul>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"></line>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                  ></path>
+                  <line
+                    x1="17.5"
+                    y1="6.5"
+                    x2="17.51"
+                    y2="6.5"
+                    stroke="white"
+                    stroke-width="2"
+                  ></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
             </div>
-
-            <div class="footer-bottom">
-                <div class="legal-links">
-                    <a href="#privacy">Politique de Confidentialité</a>
-                    <span>|</span>
-                    <a href="#terms">Conditions d'Utilisation</a>
-                    <span>|</span>
-                    <a href="#cookies">Politique de Cookies</a>
-                    <span>|</span>
-                    <a href="#shipping">Livraison & Retours</a>
-                </div>
-                <p class="copyright">&copy; 2026 Solea. Tous droits réservés.</p>
-            </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="legal-links">
+            <a href="#privacy">Politique de Confidentialité</a>
+            <span>|</span>
+            <a href="#terms">Conditions d'Utilisation</a>
+            <span>|</span>
+            <a href="#cookies">Politique de Cookies</a>
+            <span>|</span>
+            <a href="#shipping">Livraison & Retours</a>
+          </div>
+          <p class="copyright">&copy; 2026 Solea. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/shop.js"></script>
-</body>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/shop.js"></script>
+  </body>
 </html>
