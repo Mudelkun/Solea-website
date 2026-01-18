@@ -175,7 +175,46 @@ ul {
   gap: var(--spacing-sm);
 }
 
+.navbar .logo {
+  order: 1;
+}
+
+.navbar .nav-menu {
+  order: 2;
+}
+
+.navbar .nav-utilities {
+  order: 3;
+}
+
+.navbar .mobile-menu-toggle {
+  order: 4;
+}
+
 /* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-image {
+  height: 45px;
+  width: auto;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.logo a:hover .logo-image {
+  transform: scale(1.08);
+}
+
 .logo h1 {
   font-family: var(--font-heading);
   font-size: 1.5rem;
@@ -185,7 +224,7 @@ ul {
   background-clip: text;
   font-weight: 700;
   letter-spacing: 0.5px;
-  transition: all var(--transition-normal);
+  transition: transform var(--transition-normal);
 }
 
 .logo a:hover h1 {
@@ -370,6 +409,11 @@ ul {
 
 .mobile-menu-toggle:hover span {
   background-color: var(--color-dusty-rose);
+}
+
+/* Search toggle button (mobile only) */
+.search-toggle-btn {
+  display: none;
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -1341,8 +1385,36 @@ ul {
 
 /* Mobile devices */
 @media (max-width: 768px) {
-  /* Navigation changes for mobile */
-  .mobile-menu-toggle {
+  /* Logo adjustments for mobile */
+  .logo-image {
+    height: 35px;
+  }
+
+  .logo h1 {
+    font-size: 1.25rem;
+  }
+
+  .navbar {
+    gap: var(--spacing-xs);
+    justify-content: flex-start;
+  }
+
+  .navbar .logo {
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .navbar .nav-utilities {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+
+  .navbar .mobile-menu-toggle {
+    order: 3;
+    flex: 0 0 auto;
+    margin-left: auto;
     display: flex;
   }
 
@@ -1376,17 +1448,53 @@ ul {
   }
 
   .search-box {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
     width: 100%;
+    background-color: var(--color-white);
+    border-radius: 0;
+    padding: var(--spacing-sm);
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+  }
+
+  .search-box.active {
+    display: flex;
   }
 
   .search-box input {
     width: 100%;
   }
 
+  .search-toggle-btn {
+    display: flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    color: var(--color-charcoal);
+    align-items: center;
+    transition: all var(--transition-normal);
+  }
+
+  .search-toggle-btn:hover {
+    color: var(--color-deep-plum);
+    transform: scale(1.08);
+  }
+
+  .language-toggle {
+    display: flex;
+  }
+
   .nav-utilities {
-    flex-direction: column;
-    width: 100%;
-    align-items: stretch;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    gap: var(--spacing-sm);
+    display: flex;
   }
 
   /* Hero adjustments */
@@ -1490,6 +1598,19 @@ ul {
 @media (max-width: 480px) {
   .container {
     padding: 0 var(--spacing-sm);
+  }
+
+  .logo-image {
+    height: 30px;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  .mobile-menu-toggle {
+    width: auto;
+    padding: var(--spacing-xs) 0.5rem;
   }
 
   .hero-title {
