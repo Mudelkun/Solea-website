@@ -15,12 +15,31 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
+const rateLimit = require('express-rate-limit');
 
 // Initialize Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ==================== MIDDLEWARE ====================
+
+// Rate limiting for API endpoints
+const apiLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per windowMs
+    message: { error: 'Too many requests, please try again later.' }
+});
+
+// Stricter rate limiting for admin endpoints
+const adminLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 50, // Limit each IP to 50 requests per windowMs
+    message: { error: 'Too many requests, please try again later.' }
+});
+
+// Apply rate limiting to API routes
+app.use('/api/', apiLimiter);
+app.use('/api/admin/', adminLimiter);
 
 // Parse JSON request bodies
 app.use(express.json());
@@ -77,7 +96,7 @@ function writeJsonFile(filePath, data) {
  * @returns {string} Unique ID
  */
 function generateId() {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
+    return Date.now().toString(36) + Math.random().toString(36).substring(2, 11);
 }
 
 // ==================== IMAGE UPLOAD CONFIGURATION ====================
@@ -398,7 +417,7 @@ app.post('/api/admin/products/:id/images', requireAuth, upload.array('images', 5
         
         // Generate proper filename with extension
         const ext = path.extname(file.originalname) || '.jpg';
-        const newFilename = 'product-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9) + ext;
+        const newFilename = 'product-' + Date.now() + '-' + Math.random().toString(36).substring(2, 11) + ext;
         const oldPath = file.path;
         const newPath = path.join(uploadDir, newFilename);
         
