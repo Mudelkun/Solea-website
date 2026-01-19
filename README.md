@@ -2,20 +2,121 @@
 
 A modern, responsive website for Solea - offering professional hair products, cosmetics school, driving school, and decoration services.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or higher
+- npm
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start the server
+npm start
+```
+
+The server will start at `http://localhost:3000`
+
+### Admin Dashboard
+
+Access the admin dashboard at `http://localhost:3000/admin`
+
+**Default credentials:**
+- Username: `admin`
+- Password: `solea2026`
+
+⚠️ **IMPORTANT**: Change the default password immediately after first login via the Settings page.
+
 ## Project Structure
 
 ```
 Solea-website/
-├── public/                 # Public directory for Railway deployment
+├── server.js              # Express server with API endpoints
+├── package.json           # Node.js dependencies
+├── data/                  # JSON database files
+│   ├── products.json      # Product catalog
+│   ├── orders.json        # Customer orders
+│   └── settings.json      # Site settings (currency, contact, etc.)
+├── public/                # Public static files
 │   ├── index.html         # Main homepage
+│   ├── shop.html          # Product listing
+│   ├── product-detail.html # Product detail page
+│   ├── order-list.html    # Shopping cart
+│   ├── order-request.html # Checkout form
+│   ├── admin/             # Admin dashboard
+│   │   ├── index.html     # Admin interface
+│   │   ├── admin.css      # Admin styles
+│   │   └── admin.js       # Admin functionality
 │   ├── css/
-│   │   └── styles.css     # Modern CSS styling with custom color palette
+│   │   ├── styles.css     # Main styles
+│   │   └── shop.css       # Shop-specific styles
 │   ├── js/
-│   │   └── main.js        # Interactive JavaScript functionality
-│   └── images/            # Placeholder images for all sections
-├── solea-wireframe_Version3.md  # Design wireframe reference
+│   │   ├── api.js         # API client library
+│   │   ├── main.js        # Common functionality
+│   │   ├── home.js        # Homepage scripts
+│   │   ├── shop.js        # Shop functionality
+│   │   └── product-detail.js # Product page scripts
+│   └── images/            # Product and site images
 └── README.md              # This file
 ```
+
+## API Endpoints
+
+### Public Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/products` | List all products (with filters) |
+| GET | `/api/products/:id` | Get single product |
+| GET | `/api/settings` | Get public settings (currency, contact) |
+| POST | `/api/orders` | Submit a new order |
+
+### Admin Endpoints (requires authentication)
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/admin/login` | Admin login |
+| GET | `/api/admin/products` | List all products (including hidden) |
+| POST | `/api/admin/products` | Create new product |
+| PUT | `/api/admin/products/:id` | Update product |
+| DELETE | `/api/admin/products/:id` | Delete product |
+| POST | `/api/admin/products/:id/images` | Upload product images |
+| GET | `/api/admin/orders` | List all orders |
+| PUT | `/api/admin/orders/:id` | Update order status |
+| GET | `/api/admin/settings` | Get all settings |
+| PUT | `/api/admin/settings` | Update settings |
+
+### Query Parameters for `/api/products`
+
+- `category` - Filter by category (shampoo, conditioner, mask, serum, styling)
+- `hairType` - Filter by hair type (dry, oily, normal, curly, damaged)
+- `special` - Filter by special tags (new, bestseller, bio)
+- `minPrice` - Minimum price filter
+- `maxPrice` - Maximum price filter
+- `search` - Search by name or description
+- `sort` - Sort by (price-asc, price-desc, newest, rating, popularity)
+
+## Features
+
+### Admin Dashboard
+
+- **Products Management**: Add, edit, delete products with multiple images
+- **Orders Management**: View and update order status, add internal notes
+- **Settings**: Configure currency, contact info, business settings
+- **Statistics**: Dashboard with quick stats overview
+
+### User Features
+
+- **Dynamic Product Catalog**: Products loaded from server
+- **Filtering & Sorting**: By category, hair type, price, special tags
+- **Search**: Search products by name or description
+- **Shopping Cart**: Add to cart with quantity management
+- **Order Submission**: Submit orders via form (no online payment)
+- **Currency Display**: Admin-configurable currency symbol
 
 ## Color Palette
 

@@ -1,0 +1,354 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Shampooing Hydratant Professionnel",
+      "description": "Pour cheveux secs et déshydratés",
+      "longDescription": "Shampooing professionnel hydratant conçu spécialement pour les cheveux secs et déshydratés. Enrichi en huiles naturelles et vitamines, il nourrit en profondeur tout en nettoyant délicatement.",
+      "price": 24.99,
+      "category": "shampoo",
+      "hairType": ["dry"],
+      "special": ["new"],
+      "sku": "SH-001-250ML",
+      "rating": 5,
+      "reviewCount": 127,
+      "images": ["images/product-1.jpg", "images/product-2.jpg", "images/product-3.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "250ml", "price": 24.99 },
+        { "name": "500ml", "price": 39.99 },
+        { "name": "1000ml", "price": 69.99 }
+      ],
+      "benefits": [
+        "Hydratation Intense: Formule enrichie en acide hyaluronique et huiles végétales pour une hydratation profonde et durable",
+        "Douceur et Brillance: Redonne de la brillance naturelle et de la souplesse aux cheveux secs",
+        "Protection: Protège contre les agressions extérieures et la déshydratation",
+        "Sans Sulfates: Formule douce sans sulfates agressifs, respectueuse du cuir chevelu",
+        "Résultats Visibles: Cheveux visiblement plus sains et nourris dès la première utilisation"
+      ],
+      "ingredients": "Aqua, Sodium Cocoyl Isethionate, Cocamidopropyl Betaine, Glycerin, Sodium Hyaluronate, Argania Spinosa Kernel Oil, Panthenol, Aloe Barbadensis Leaf Extract, Hydrolyzed Wheat Protein, Parfum, Citric Acid, Sodium Benzoate, Potassium Sorbate.",
+      "certifications": ["Sans Parabènes", "Sans Sulfates", "Sans Silicones", "Cruelty Free"],
+      "stock": 50,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Masque Capillaire Réparateur",
+      "description": "Répare intensément les cheveux abîmés",
+      "longDescription": "Masque capillaire intensif pour réparer les cheveux abîmés et fragilisés. Formule riche en kératine et huiles nourrissantes pour une réparation en profondeur.",
+      "price": 32.99,
+      "category": "mask",
+      "hairType": ["damaged"],
+      "special": ["bestseller"],
+      "sku": "MK-002-250ML",
+      "rating": 5,
+      "reviewCount": 203,
+      "images": ["images/product-2.jpg", "images/product-1.jpg", "images/product-3.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "200ml", "price": 32.99 },
+        { "name": "400ml", "price": 54.99 }
+      ],
+      "benefits": [
+        "Réparation Intense: Reconstitue la fibre capillaire de l'intérieur",
+        "Nutrition Profonde: Nourrit les cheveux les plus abîmés",
+        "Brillance Retrouvée: Redonne éclat et vitalité"
+      ],
+      "ingredients": "Aqua, Cetearyl Alcohol, Behentrimonium Chloride, Glycerin, Keratin, Argania Spinosa Kernel Oil, Coconut Oil, Parfum.",
+      "certifications": ["Sans Parabènes", "Cruelty Free"],
+      "stock": 35,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Sérum Brillance Intense",
+      "description": "Pour une brillance éclatante",
+      "longDescription": "Sérum léger et non gras pour une brillance intense et une protection thermique. Idéal pour tous types de cheveux.",
+      "price": 28.99,
+      "category": "serum",
+      "hairType": ["normal"],
+      "special": [],
+      "sku": "SR-003-50ML",
+      "rating": 4,
+      "reviewCount": 89,
+      "images": ["images/product-3.jpg", "images/product-1.jpg", "images/product-2.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "50ml", "price": 28.99 },
+        { "name": "100ml", "price": 49.99 }
+      ],
+      "benefits": [
+        "Brillance Immédiate: Effet miroir instantané",
+        "Protection Thermique: Protège jusqu'à 230°C",
+        "Légèreté: Formule non grasse"
+      ],
+      "ingredients": "Cyclomethicone, Dimethicone, Phenyl Trimethicone, Argania Spinosa Kernel Oil, Tocopherol, Parfum.",
+      "certifications": ["Cruelty Free"],
+      "stock": 42,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "name": "Huile Nourrissante Bio",
+      "description": "100% naturelle et bio-certifiée",
+      "longDescription": "Huile capillaire 100% naturelle et biologique. Nourrit, protège et sublime tous les types de cheveux, particulièrement les cheveux secs et abîmés.",
+      "price": 35.99,
+      "category": "serum",
+      "hairType": ["dry", "damaged"],
+      "special": ["bio"],
+      "sku": "HL-004-100ML",
+      "rating": 5,
+      "reviewCount": 156,
+      "images": ["images/product-4.jpg", "images/product-1.jpg", "images/product-2.jpg", "images/product-3.jpg"],
+      "variants": [
+        { "name": "50ml", "price": 22.99 },
+        { "name": "100ml", "price": 35.99 }
+      ],
+      "benefits": [
+        "100% Bio: Ingrédients certifiés biologiques",
+        "Multi-Usage: Cheveux, corps et ongles",
+        "Nutrition Intense: Pénètre en profondeur"
+      ],
+      "ingredients": "Argania Spinosa Kernel Oil*, Simmondsia Chinensis Seed Oil*, Prunus Amygdalus Dulcis Oil*, Tocopherol. *Ingrédients issus de l'agriculture biologique.",
+      "certifications": ["Bio Certifié", "Sans Parabènes", "Sans Silicones", "Cruelty Free", "Vegan"],
+      "stock": 28,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "Après-Shampooing Boucles Définies",
+      "description": "Définit et hydrate les boucles",
+      "longDescription": "Après-shampooing spécialement formulé pour les cheveux bouclés. Définit les boucles, hydrate et élimine les frisottis.",
+      "price": 26.99,
+      "category": "conditioner",
+      "hairType": ["curly"],
+      "special": [],
+      "sku": "AS-005-250ML",
+      "rating": 5,
+      "reviewCount": 98,
+      "images": ["images/product-1.jpg", "images/product-2.jpg", "images/product-3.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "250ml", "price": 26.99 },
+        { "name": "500ml", "price": 44.99 }
+      ],
+      "benefits": [
+        "Définition: Boucles parfaitement définies",
+        "Anti-Frisottis: Contrôle optimal",
+        "Hydratation: Cheveux souples et brillants"
+      ],
+      "ingredients": "Aqua, Cetearyl Alcohol, Glycerin, Behentrimonium Chloride, Shea Butter, Coconut Oil, Parfum.",
+      "certifications": ["Sans Parabènes", "Cruelty Free"],
+      "stock": 45,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "Spray Coiffant Volume",
+      "description": "Volume et tenue longue durée",
+      "longDescription": "Spray coiffant professionnel pour un volume spectaculaire et une tenue longue durée. Formule légère qui ne colle pas.",
+      "price": 22.99,
+      "category": "styling",
+      "hairType": ["normal", "oily"],
+      "special": [],
+      "sku": "SP-006-200ML",
+      "rating": 4,
+      "reviewCount": 76,
+      "images": ["images/product-2.jpg", "images/product-1.jpg", "images/product-3.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "150ml", "price": 18.99 },
+        { "name": "200ml", "price": 22.99 }
+      ],
+      "benefits": [
+        "Volume XXL: Effet push-up instantané",
+        "Tenue 24h: Résiste à l'humidité",
+        "Légèreté: Ne colle pas, ne craquèle pas"
+      ],
+      "ingredients": "Aqua, Alcohol Denat., VP/VA Copolymer, Panthenol, Parfum.",
+      "certifications": ["Cruelty Free"],
+      "stock": 60,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "Shampooing Purifiant",
+      "description": "Contrôle l'excès de sébum",
+      "longDescription": "Shampooing purifiant pour cheveux gras. Nettoie en profondeur et régule la production de sébum pour des cheveux frais plus longtemps.",
+      "price": 23.99,
+      "category": "shampoo",
+      "hairType": ["oily"],
+      "special": [],
+      "sku": "SH-007-250ML",
+      "rating": 5,
+      "reviewCount": 112,
+      "images": ["images/product-3.jpg", "images/product-1.jpg", "images/product-2.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "250ml", "price": 23.99 },
+        { "name": "500ml", "price": 39.99 }
+      ],
+      "benefits": [
+        "Purification: Élimine l'excès de sébum",
+        "Régulation: Contrôle la production de sébum",
+        "Fraîcheur: Cheveux frais 48h"
+      ],
+      "ingredients": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Zinc Pyrithione, Salicylic Acid, Menthol, Parfum.",
+      "certifications": ["Cruelty Free"],
+      "stock": 38,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "Masque Nutrition Intense Bio",
+      "description": "Formule bio ultra-nourrissante",
+      "longDescription": "Masque bio ultra-nourrissant pour cheveux très secs et bouclés. Formule 100% naturelle pour une nutrition intense.",
+      "price": 38.99,
+      "category": "mask",
+      "hairType": ["curly", "dry"],
+      "special": ["new", "bio"],
+      "sku": "MK-008-200ML",
+      "rating": 5,
+      "reviewCount": 64,
+      "images": ["images/product-4.jpg", "images/product-1.jpg", "images/product-2.jpg", "images/product-3.jpg"],
+      "variants": [
+        { "name": "200ml", "price": 38.99 },
+        { "name": "400ml", "price": 64.99 }
+      ],
+      "benefits": [
+        "100% Naturel: Ingrédients biologiques",
+        "Nutrition Extrême: Pour cheveux très secs",
+        "Définition: Parfait pour les boucles"
+      ],
+      "ingredients": "Aqua, Shea Butter*, Coconut Oil*, Aloe Vera*, Honey*, Parfum Natural. *Bio certifié.",
+      "certifications": ["Bio Certifié", "Sans Parabènes", "Sans Sulfates", "Sans Silicones", "Cruelty Free", "Vegan"],
+      "stock": 22,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "Sérum Réparateur Professionnel",
+      "description": "Réparation en profondeur",
+      "longDescription": "Sérum réparateur professionnel pour cheveux très abîmés. Technologie de pointe pour reconstruire la fibre capillaire.",
+      "price": 42.99,
+      "category": "serum",
+      "hairType": ["damaged"],
+      "special": ["bestseller"],
+      "sku": "SR-009-50ML",
+      "rating": 5,
+      "reviewCount": 187,
+      "images": ["images/product-1.jpg", "images/product-2.jpg", "images/product-3.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "50ml", "price": 42.99 },
+        { "name": "100ml", "price": 74.99 }
+      ],
+      "benefits": [
+        "Réparation Cellulaire: Technologie de pointe",
+        "Résultats Immédiats: Dès la première application",
+        "Protection Longue Durée: Effet prolongé"
+      ],
+      "ingredients": "Aqua, Hydrolyzed Keratin, Ceramide NP, Argan Oil, Silicone Quaternium-22, Parfum.",
+      "certifications": ["Cruelty Free"],
+      "stock": 15,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "name": "Gel Définition Boucles",
+      "description": "Définit sans alourdir",
+      "longDescription": "Gel coiffant pour boucles parfaitement définies. Formule légère qui ne craquèle pas et maintient la définition toute la journée.",
+      "price": 29.99,
+      "category": "styling",
+      "hairType": ["curly"],
+      "special": [],
+      "sku": "GL-010-200ML",
+      "rating": 4,
+      "reviewCount": 91,
+      "images": ["images/product-2.jpg", "images/product-1.jpg", "images/product-3.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "200ml", "price": 29.99 }
+      ],
+      "benefits": [
+        "Définition Parfaite: Boucles sculptées",
+        "Sans Résidu: Ne craquèle jamais",
+        "Tenue Flexible: Mouvement naturel"
+      ],
+      "ingredients": "Aqua, PVP, Glycerin, Aloe Vera, Parfum.",
+      "certifications": ["Sans Parabènes", "Cruelty Free"],
+      "stock": 55,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "name": "Après-Shampooing Quotidien",
+      "description": "Usage quotidien, tous types",
+      "longDescription": "Après-shampooing léger pour usage quotidien. Convient à tous les types de cheveux. Démêle et hydrate sans alourdir.",
+      "price": 25.99,
+      "category": "conditioner",
+      "hairType": ["normal"],
+      "special": [],
+      "sku": "AS-011-250ML",
+      "rating": 5,
+      "reviewCount": 143,
+      "images": ["images/product-3.jpg", "images/product-1.jpg", "images/product-2.jpg", "images/product-4.jpg"],
+      "variants": [
+        { "name": "250ml", "price": 25.99 },
+        { "name": "500ml", "price": 42.99 }
+      ],
+      "benefits": [
+        "Usage Quotidien: Douceur jour après jour",
+        "Démêlage Facile: Plus de nœuds",
+        "Légèreté: Ne graisse pas"
+      ],
+      "ingredients": "Aqua, Cetearyl Alcohol, Glycerin, Behentrimonium Chloride, Parfum.",
+      "certifications": ["Cruelty Free"],
+      "stock": 70,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "12",
+      "name": "Shampooing Réparateur Intense",
+      "description": "Pour cheveux très abîmés",
+      "longDescription": "Shampooing réparateur intense pour cheveux très abîmés et fragilisés. Formule enrichie en kératine pour reconstruire la fibre capillaire.",
+      "price": 27.99,
+      "category": "shampoo",
+      "hairType": ["damaged"],
+      "special": ["bestseller"],
+      "sku": "SH-012-250ML",
+      "rating": 5,
+      "reviewCount": 201,
+      "images": ["images/product-4.jpg", "images/product-1.jpg", "images/product-2.jpg", "images/product-3.jpg"],
+      "variants": [
+        { "name": "250ml", "price": 27.99 },
+        { "name": "500ml", "price": 45.99 }
+      ],
+      "benefits": [
+        "Réparation Intense: Reconstruit les cheveux",
+        "Kératine Active: Force et résistance",
+        "Brillance: Éclat retrouvé"
+      ],
+      "ingredients": "Aqua, Sodium Cocoyl Isethionate, Hydrolyzed Keratin, Argan Oil, Panthenol, Parfum.",
+      "certifications": ["Sans Parabènes", "Sans Sulfates", "Cruelty Free"],
+      "stock": 40,
+      "visible": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ]
+}
