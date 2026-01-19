@@ -1,0 +1,22 @@
+{
+  "currency": {
+    "symbol": "€",
+    "code": "EUR",
+    "name": "Euro"
+  },
+  "admin": {
+    "username": "admin",
+    "password": "solea2026"
+  },
+  "contact": {
+    "phone": "+33 1 23 45 67 89",
+    "email": "contact@solea.com",
+    "whatsapp": "+33 6 12 34 56 78",
+    "address": "123 Rue de la Beauté, Paris"
+  },
+  "business": {
+    "name": "Solea",
+    "freeShippingThreshold": 50,
+    "shippingCost": 5.99
+  }
+}
