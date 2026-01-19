@@ -348,11 +348,17 @@ function displayProducts() {
   }
 
   tbody.innerHTML = products
-    .map(
-      (product) => `
+    .map((product) => {
+      // Ensure image path starts with / for absolute path from root
+      const imageSrc = product.images?.[0]
+        ? product.images[0].startsWith("/")
+          ? product.images[0]
+          : "/" + product.images[0]
+        : "/images/placeholder.jpg";
+      return `
         <tr>
             <td>
-                <img src="${product.images?.[0] || "images/placeholder.jpg"}" alt="${product.name}" class="product-thumb">
+                <img src="${imageSrc}" alt="${product.name}" class="product-thumb">
             </td>
             <td>
                 <strong>${product.name}</strong>
@@ -371,8 +377,8 @@ function displayProducts() {
                 <button class="btn btn-small btn-danger" onclick="deleteProduct('${product.id}')">🗑️</button>
             </td>
         </tr>
-    `,
-    )
+    `;
+    })
     .join("");
 }
 
@@ -435,7 +441,11 @@ function openProductModal(product = null) {
     // Display existing images
     if (product.images && product.images.length > 0) {
       document.getElementById("image-preview").innerHTML = product.images
-        .map((img) => `<img src="${img}" alt="Product image">`)
+        .map((img) => {
+          // Ensure the image path starts with / for absolute path from root
+          const imageSrc = img.startsWith("/") ? img : "/" + img;
+          return `<img src="${imageSrc}" alt="Product image" style="max-width: 100%; height: auto;">`;
+        })
         .join("");
     }
 

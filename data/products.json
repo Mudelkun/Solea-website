@@ -76,6 +76,37 @@
       "visible": true,
       "createdAt": "2026-01-19T21:55:31.953Z",
       "updatedAt": "2026-01-19T21:55:33.299Z"
+    },
+    {
+      "id": "mklpnn38dc0uwvo8j",
+      "name": "Test many uploads",
+      "description": "Website design",
+      "longDescription": "w",
+      "price": 10,
+      "category": "shampoo",
+      "hairType": [],
+      "special": [],
+      "sku": "34",
+      "rating": 0,
+      "reviewCount": 0,
+      "images": [
+        "images/products/product-1768860140000-zdvzckehw.jpeg",
+        "images/products/product-1768860140002-ke01r36hv.png",
+        "images/products/product-1768860140003-c8ydlq2kr.jpeg"
+      ],
+      "variants": [
+        {
+          "name": "250ml",
+          "price": 0.37
+        }
+      ],
+      "benefits": [],
+      "ingredients": "",
+      "certifications": [],
+      "stock": 0,
+      "visible": true,
+      "createdAt": "2026-01-19T22:02:19.940Z",
+      "updatedAt": "2026-01-19T22:02:20.005Z"
     }
   ]
 }
