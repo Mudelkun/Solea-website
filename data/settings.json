@@ -1,6 +1,6 @@
 {
   "currency": {
-    "symbol": "€",
+    "symbol": " HTG",
     "code": "EUR",
     "name": "Euro"
   },
@@ -9,7 +9,7 @@
     "password": "solea2026"
   },
   "contact": {
-    "phone": "+33 1 23 45 67 89",
+    "phone": "+819 963",
     "email": "contact@solea.com",
     "whatsapp": "+33 6 12 34 56 78",
     "address": "123 Rue de la Beauté, Paris"

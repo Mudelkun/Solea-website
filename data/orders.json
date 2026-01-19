@@ -1,3 +1,35 @@
 {
-  "orders": []
+  "orders": [
+    {
+      "id": "mklo81okl6z0k1ln5",
+      "orderNumber": "SOL-57732740",
+      "customer": {
+        "firstName": "Rodarly Clavensky",
+        "lastName": "Perilus",
+        "email": "perilusrodarly@gmail.com",
+        "phone": "8194616842",
+        "address": "Rue verdi\n2571",
+        "preferredContact": "email",
+        "newsletter": false
+      },
+      "items": [
+        {
+          "productId": "mklo1xsd6b5lvtnke",
+          "name": "Dukykun",
+          "price": 39.99,
+          "quantity": 2,
+          "variant": "500ml",
+          "subtotal": 79.98
+        }
+      ],
+      "notes": "",
+      "subtotal": 79.98,
+      "shipping": "À confirmer",
+      "total": 79.98,
+      "status": "completed",
+      "internalNotes": "",
+      "createdAt": "2026-01-19T21:22:12.741Z",
+      "updatedAt": "2026-01-19T21:23:25.756Z"
+    }
+  ]
 }
