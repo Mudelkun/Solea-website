@@ -13,7 +13,7 @@
     "cosmetics",
     "e-commerce"
   ],
-  "author": "Solea",
+  "author": "Rodarly Perilus",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",

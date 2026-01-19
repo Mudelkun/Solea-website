@@ -1,450 +1,616 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Admin Dashboard - Solea</title>
-    
+
     <!-- Admin Dashboard Styles -->
-    <link rel="stylesheet" href="admin.css">
-    
+    <link rel="stylesheet" href="admin.css" />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- ==================== LOGIN SCREEN ==================== -->
     <!-- Displayed when admin is not logged in -->
     <div class="login-screen" id="login-screen">
-        <div class="login-box">
-            <div class="login-logo">
-                <h1>🌸 Solea</h1>
-                <p>Administration</p>
-            </div>
-            
-            <form id="login-form">
-                <div class="form-group">
-                    <label for="username">Nom d'utilisateur</label>
-                    <input type="text" id="username" name="username" required autocomplete="username">
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" required autocomplete="current-password">
-                </div>
-                
-                <div id="login-error" class="error-message" style="display: none;"></div>
-                
-                <button type="submit" class="btn btn-primary btn-full">
-                    Se Connecter
-                </button>
-            </form>
-            
-            <a href="/" class="back-link">← Retour au site</a>
+      <div class="login-box">
+        <div class="login-logo">
+          <h1>🌸 Solea</h1>
+          <p>Administration</p>
         </div>
+
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="current-password"
+            />
+          </div>
+
+          <div
+            id="login-error"
+            class="error-message"
+            style="display: none"
+          ></div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Se Connecter
+          </button>
+        </form>
+
+        <a href="/" class="back-link">← Retour au site</a>
+      </div>
     </div>
-    
+
     <!-- ==================== ADMIN DASHBOARD ==================== -->
     <!-- Main admin interface, shown after login -->
-    <div class="admin-dashboard" id="admin-dashboard" style="display: none;">
-        <!-- Sidebar Navigation -->
-        <aside class="admin-sidebar">
-            <div class="sidebar-header">
-                <h1>🌸 Solea</h1>
-                <p>Admin</p>
+    <div class="admin-dashboard" id="admin-dashboard" style="display: none">
+      <!-- Sidebar Navigation -->
+      <aside class="admin-sidebar">
+        <div class="sidebar-header">
+          <h1>🌸 Solea</h1>
+          <p>Admin</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="#" class="nav-item active" data-section="dashboard">
+            <span class="nav-icon">📊</span>
+            Tableau de Bord
+          </a>
+          <a href="#" class="nav-item" data-section="products">
+            <span class="nav-icon">🧴</span>
+            Produits
+          </a>
+          <a href="#" class="nav-item" data-section="orders">
+            <span class="nav-icon">📦</span>
+            Commandes
+          </a>
+          <a href="#" class="nav-item" data-section="settings">
+            <span class="nav-icon">⚙️</span>
+            Paramètres
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="/" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            Voir le Site
+          </a>
+          <a href="#" class="nav-item" id="logout-btn">
+            <span class="nav-icon">🚪</span>
+            Déconnexion
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="admin-main">
+        <!-- Top Header -->
+        <header class="admin-header">
+          <div class="header-left">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            <h2 id="page-title">Tableau de Bord</h2>
+          </div>
+          <div class="header-right">
+            <span class="admin-user">👤 Admin</span>
+          </div>
+        </header>
+
+        <!-- Content Sections -->
+        <div class="admin-content">
+          <!-- ==================== DASHBOARD SECTION ==================== -->
+          <section class="content-section active" id="section-dashboard">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">🧴</div>
+                <div class="stat-info">
+                  <h3 id="stat-products">0</h3>
+                  <p>Produits</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-info">
+                  <h3 id="stat-orders">0</h3>
+                  <p>Commandes</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">🆕</div>
+                <div class="stat-info">
+                  <h3 id="stat-new-orders">0</h3>
+                  <p>Nouvelles</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-info">
+                  <h3 id="stat-currency">EUR</h3>
+                  <p>Devise</p>
+                </div>
+              </div>
             </div>
-            
-            <nav class="sidebar-nav">
-                <a href="#" class="nav-item active" data-section="dashboard">
-                    <span class="nav-icon">📊</span>
-                    Tableau de Bord
-                </a>
-                <a href="#" class="nav-item" data-section="products">
-                    <span class="nav-icon">🧴</span>
-                    Produits
-                </a>
-                <a href="#" class="nav-item" data-section="orders">
-                    <span class="nav-icon">📦</span>
-                    Commandes
-                </a>
-                <a href="#" class="nav-item" data-section="settings">
-                    <span class="nav-icon">⚙️</span>
+
+            <div class="dashboard-sections">
+              <div class="dashboard-card">
+                <h3>📦 Dernières Commandes</h3>
+                <div id="recent-orders">
+                  <p class="loading">Chargement...</p>
+                </div>
+              </div>
+
+              <div class="dashboard-card">
+                <h3>🧴 Actions Rapides</h3>
+                <div class="quick-actions">
+                  <button
+                    class="btn btn-primary"
+                    onclick="
+                      showSection('products');
+                      openProductModal();
+                    "
+                  >
+                    + Ajouter Produit
+                  </button>
+                  <button
+                    class="btn btn-secondary"
+                    onclick="showSection('orders')"
+                  >
+                    Voir Commandes
+                  </button>
+                  <button
+                    class="btn btn-secondary"
+                    onclick="showSection('settings')"
+                  >
                     Paramètres
-                </a>
-            </nav>
-            
-            <div class="sidebar-footer">
-                <a href="/" class="nav-item">
-                    <span class="nav-icon">🏠</span>
-                    Voir le Site
-                </a>
-                <a href="#" class="nav-item" id="logout-btn">
-                    <span class="nav-icon">🚪</span>
-                    Déconnexion
-                </a>
-            </div>
-        </aside>
-        
-        <!-- Main Content Area -->
-        <main class="admin-main">
-            <!-- Top Header -->
-            <header class="admin-header">
-                <div class="header-left">
-                    <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
-                    <h2 id="page-title">Tableau de Bord</h2>
+                  </button>
                 </div>
-                <div class="header-right">
-                    <span class="admin-user">👤 Admin</span>
-                </div>
-            </header>
-            
-            <!-- Content Sections -->
-            <div class="admin-content">
-                
-                <!-- ==================== DASHBOARD SECTION ==================== -->
-                <section class="content-section active" id="section-dashboard">
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-icon">🧴</div>
-                            <div class="stat-info">
-                                <h3 id="stat-products">0</h3>
-                                <p>Produits</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">📦</div>
-                            <div class="stat-info">
-                                <h3 id="stat-orders">0</h3>
-                                <p>Commandes</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">🆕</div>
-                            <div class="stat-info">
-                                <h3 id="stat-new-orders">0</h3>
-                                <p>Nouvelles</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">💰</div>
-                            <div class="stat-info">
-                                <h3 id="stat-currency">EUR</h3>
-                                <p>Devise</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="dashboard-sections">
-                        <div class="dashboard-card">
-                            <h3>📦 Dernières Commandes</h3>
-                            <div id="recent-orders">
-                                <p class="loading">Chargement...</p>
-                            </div>
-                        </div>
-                        
-                        <div class="dashboard-card">
-                            <h3>🧴 Actions Rapides</h3>
-                            <div class="quick-actions">
-                                <button class="btn btn-primary" onclick="showSection('products'); openProductModal();">
-                                    + Ajouter Produit
-                                </button>
-                                <button class="btn btn-secondary" onclick="showSection('orders');">
-                                    Voir Commandes
-                                </button>
-                                <button class="btn btn-secondary" onclick="showSection('settings');">
-                                    Paramètres
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- ==================== PRODUCTS SECTION ==================== -->
-                <section class="content-section" id="section-products">
-                    <div class="section-header">
-                        <h3>Gestion des Produits</h3>
-                        <button class="btn btn-primary" onclick="openProductModal()">
-                            + Ajouter Produit
-                        </button>
-                    </div>
-                    
-                    <div class="products-table-container">
-                        <table class="admin-table" id="products-table">
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Nom</th>
-                                    <th>Prix</th>
-                                    <th>Catégorie</th>
-                                    <th>Stock</th>
-                                    <th>Visible</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody id="products-tbody">
-                                <tr>
-                                    <td colspan="7" class="loading">Chargement des produits...</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                
-                <!-- ==================== ORDERS SECTION ==================== -->
-                <section class="content-section" id="section-orders">
-                    <div class="section-header">
-                        <h3>Gestion des Commandes</h3>
-                        <div class="filter-buttons">
-                            <button class="btn btn-small active" data-filter="all">Toutes</button>
-                            <button class="btn btn-small" data-filter="new">Nouvelles</button>
-                            <button class="btn btn-small" data-filter="processing">En cours</button>
-                            <button class="btn btn-small" data-filter="completed">Terminées</button>
-                        </div>
-                    </div>
-                    
-                    <div class="orders-list" id="orders-list">
-                        <p class="loading">Chargement des commandes...</p>
-                    </div>
-                </section>
-                
-                <!-- ==================== SETTINGS SECTION ==================== -->
-                <section class="content-section" id="section-settings">
-                    <div class="section-header">
-                        <h3>Paramètres</h3>
-                    </div>
-                    
-                    <div class="settings-grid">
-                        <!-- Currency Settings -->
-                        <div class="settings-card">
-                            <h4>💰 Devise</h4>
-                            <form id="currency-form">
-                                <div class="form-group">
-                                    <label for="currency-code">Code Devise</label>
-                                    <select id="currency-code" name="code">
-                                        <option value="EUR">EUR - Euro</option>
-                                        <option value="USD">USD - Dollar US</option>
-                                        <option value="GBP">GBP - Livre Sterling</option>
-                                        <option value="CHF">CHF - Franc Suisse</option>
-                                        <option value="CAD">CAD - Dollar Canadien</option>
-                                        <option value="XOF">XOF - Franc CFA</option>
-                                        <option value="MAD">MAD - Dirham Marocain</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="currency-symbol">Symbole</label>
-                                    <input type="text" id="currency-symbol" name="symbol" value="€" maxlength="5">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enregistrer</button>
-                            </form>
-                        </div>
-                        
-                        <!-- Business Settings -->
-                        <div class="settings-card">
-                            <h4>🏢 Entreprise</h4>
-                            <form id="business-form">
-                                <div class="form-group">
-                                    <label for="business-name">Nom</label>
-                                    <input type="text" id="business-name" name="name" value="Solea">
-                                </div>
-                                <div class="form-group">
-                                    <label for="free-shipping">Seuil Livraison Gratuite</label>
-                                    <input type="number" id="free-shipping" name="freeShippingThreshold" value="50" step="0.01">
-                                </div>
-                                <div class="form-group">
-                                    <label for="shipping-cost">Frais de Livraison</label>
-                                    <input type="number" id="shipping-cost" name="shippingCost" value="5.99" step="0.01">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enregistrer</button>
-                            </form>
-                        </div>
-                        
-                        <!-- Contact Settings -->
-                        <div class="settings-card">
-                            <h4>📞 Contact</h4>
-                            <form id="contact-form">
-                                <div class="form-group">
-                                    <label for="contact-phone">Téléphone</label>
-                                    <input type="text" id="contact-phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-email">Email</label>
-                                    <input type="email" id="contact-email" name="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-whatsapp">WhatsApp</label>
-                                    <input type="text" id="contact-whatsapp" name="whatsapp">
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-address">Adresse</label>
-                                    <textarea id="contact-address" name="address" rows="2"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enregistrer</button>
-                            </form>
-                        </div>
-                        
-                        <!-- Admin Settings -->
-                        <div class="settings-card">
-                            <h4>🔐 Sécurité</h4>
-                            <form id="admin-form">
-                                <div class="form-group">
-                                    <label for="new-password">Nouveau Mot de Passe</label>
-                                    <input type="password" id="new-password" name="password" placeholder="Laisser vide pour ne pas changer">
-                                </div>
-                                <div class="form-group">
-                                    <label for="confirm-password">Confirmer</label>
-                                    <input type="password" id="confirm-password" placeholder="Confirmer le mot de passe">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Changer le Mot de Passe</button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
+              </div>
             </div>
-        </main>
+          </section>
+
+          <!-- ==================== PRODUCTS SECTION ==================== -->
+          <section class="content-section" id="section-products">
+            <div class="section-header">
+              <h3>Gestion des Produits</h3>
+              <button class="btn btn-primary" onclick="openProductModal()">
+                + Ajouter Produit
+              </button>
+            </div>
+
+            <div class="products-table-container">
+              <table class="admin-table" id="products-table">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Catégorie</th>
+                    <th>Stock</th>
+                    <th>Visible</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="products-tbody">
+                  <tr>
+                    <td colspan="7" class="loading">
+                      Chargement des produits...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- ==================== ORDERS SECTION ==================== -->
+          <section class="content-section" id="section-orders">
+            <div class="section-header">
+              <h3>Gestion des Commandes</h3>
+              <div class="filter-buttons">
+                <button class="btn btn-small active" data-filter="all">
+                  Toutes
+                </button>
+                <button class="btn btn-small" data-filter="new">
+                  Nouvelles
+                </button>
+                <button class="btn btn-small" data-filter="processing">
+                  En cours
+                </button>
+                <button class="btn btn-small" data-filter="completed">
+                  Terminées
+                </button>
+              </div>
+            </div>
+
+            <div class="orders-list" id="orders-list">
+              <p class="loading">Chargement des commandes...</p>
+            </div>
+          </section>
+
+          <!-- ==================== SETTINGS SECTION ==================== -->
+          <section class="content-section" id="section-settings">
+            <div class="section-header">
+              <h3>Paramètres</h3>
+            </div>
+
+            <div class="settings-grid">
+              <!-- Currency Settings -->
+              <div class="settings-card">
+                <h4>💰 Devise</h4>
+                <form id="currency-form">
+                  <div class="form-group">
+                    <label for="currency-code">Code Devise</label>
+                    <select id="currency-code" name="code">
+                      <option value="EUR">EUR - Euro</option>
+                      <option value="USD">USD - Dollar US</option>
+                      <option value="GBP">GBP - Livre Sterling</option>
+                      <option value="CHF">CHF - Franc Suisse</option>
+                      <option value="CAD">CAD - Dollar Canadien</option>
+                      <option value="XOF">XOF - Franc CFA</option>
+                      <option value="MAD">MAD - Dirham Marocain</option>
+                      <option value="HTG">HTG - Gourde Haïtienne</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="currency-symbol">Symbole</label>
+                    <input
+                      type="text"
+                      id="currency-symbol"
+                      name="symbol"
+                      value="€"
+                      maxlength="5"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Enregistrer
+                  </button>
+                </form>
+              </div>
+
+              <!-- Business Settings -->
+              <div class="settings-card">
+                <h4>🏢 Entreprise</h4>
+                <form id="business-form">
+                  <div class="form-group">
+                    <label for="business-name">Nom</label>
+                    <input
+                      type="text"
+                      id="business-name"
+                      name="name"
+                      value="Solea"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="free-shipping">Seuil Livraison Gratuite</label>
+                    <input
+                      type="number"
+                      id="free-shipping"
+                      name="freeShippingThreshold"
+                      value="50"
+                      step="0.01"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="shipping-cost">Frais de Livraison</label>
+                    <input
+                      type="number"
+                      id="shipping-cost"
+                      name="shippingCost"
+                      value="5.99"
+                      step="0.01"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Enregistrer
+                  </button>
+                </form>
+              </div>
+
+              <!-- Contact Settings -->
+              <div class="settings-card">
+                <h4>📞 Contact</h4>
+                <form id="contact-form">
+                  <div class="form-group">
+                    <label for="contact-phone">Téléphone</label>
+                    <input type="text" id="contact-phone" name="phone" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-whatsapp">WhatsApp</label>
+                    <input type="text" id="contact-whatsapp" name="whatsapp" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-address">Adresse</label>
+                    <textarea
+                      id="contact-address"
+                      name="address"
+                      rows="2"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Enregistrer
+                  </button>
+                </form>
+              </div>
+
+              <!-- Admin Settings -->
+              <div class="settings-card">
+                <h4>🔐 Sécurité</h4>
+                <form id="admin-form">
+                  <div class="form-group">
+                    <label for="new-password">Nouveau Mot de Passe</label>
+                    <input
+                      type="password"
+                      id="new-password"
+                      name="password"
+                      placeholder="Laisser vide pour ne pas changer"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password">Confirmer</label>
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      placeholder="Confirmer le mot de passe"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Changer le Mot de Passe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
-    
+
     <!-- ==================== PRODUCT MODAL ==================== -->
     <!-- Modal for adding/editing products -->
     <div class="modal" id="product-modal">
-        <div class="modal-content large">
-            <div class="modal-header">
-                <h3 id="product-modal-title">Ajouter un Produit</h3>
-                <button class="modal-close" onclick="closeProductModal()">&times;</button>
-            </div>
-            
-            <form id="product-form">
-                <input type="hidden" id="product-id" name="id">
-                
-                <div class="modal-body">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="product-name">Nom du Produit *</label>
-                            <input type="text" id="product-name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="product-sku">SKU</label>
-                            <input type="text" id="product-sku" name="sku">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="product-description">Description Courte</label>
-                        <input type="text" id="product-description" name="description">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="product-long-description">Description Détaillée</label>
-                        <textarea id="product-long-description" name="longDescription" rows="3"></textarea>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="product-price">Prix *</label>
-                            <input type="number" id="product-price" name="price" step="0.01" min="0" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="product-stock">Stock</label>
-                            <input type="number" id="product-stock" name="stock" min="0" value="0">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="product-category">Catégorie</label>
-                            <select id="product-category" name="category">
-                                <option value="shampoo">Shampooing</option>
-                                <option value="conditioner">Après-Shampooing</option>
-                                <option value="mask">Masque</option>
-                                <option value="serum">Sérum / Huile</option>
-                                <option value="styling">Coiffage</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="product-visible">Visible</label>
-                            <select id="product-visible" name="visible">
-                                <option value="true">Oui</option>
-                                <option value="false">Non</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Type de Cheveux</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="hairType" value="dry"> Secs</label>
-                            <label><input type="checkbox" name="hairType" value="oily"> Gras</label>
-                            <label><input type="checkbox" name="hairType" value="normal"> Normaux</label>
-                            <label><input type="checkbox" name="hairType" value="curly"> Bouclés</label>
-                            <label><input type="checkbox" name="hairType" value="damaged"> Abîmés</label>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Tags Spéciaux</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="special" value="new"> Nouveau</label>
-                            <label><input type="checkbox" name="special" value="bestseller"> Bestseller</label>
-                            <label><input type="checkbox" name="special" value="bio"> Bio</label>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="product-ingredients">Ingrédients (INCI)</label>
-                        <textarea id="product-ingredients" name="ingredients" rows="2"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Images du Produit</label>
-                        <div class="image-upload-area" id="image-upload-area">
-                            <input type="file" id="product-images" name="images" multiple accept="image/*" style="display: none;">
-                            <button type="button" class="btn btn-secondary" onclick="document.getElementById('product-images').click()">
-                                📷 Ajouter des Images
-                            </button>
-                            <div id="image-preview" class="image-preview"></div>
-                        </div>
-                        <small>Formats acceptés: JPEG, PNG, GIF, WebP. Max 5MB par image.</small>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Variantes (Tailles/Prix)</label>
-                        <div id="variants-container">
-                            <!-- Variants will be added here dynamically -->
-                        </div>
-                        <button type="button" class="btn btn-small btn-secondary" onclick="addVariant()">
-                            + Ajouter Variante
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="closeProductModal()">Annuler</button>
-                    <button type="submit" class="btn btn-primary">Enregistrer</button>
-                </div>
-            </form>
+      <div class="modal-content large">
+        <div class="modal-header">
+          <h3 id="product-modal-title">Ajouter un Produit</h3>
+          <button class="modal-close" onclick="closeProductModal()">
+            &times;
+          </button>
         </div>
+
+        <form id="product-form">
+          <input type="hidden" id="product-id" name="id" />
+
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product-name">Nom du Produit *</label>
+                <input type="text" id="product-name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="product-sku">SKU</label>
+                <input type="text" id="product-sku" name="sku" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="product-description">Description Courte</label>
+              <input type="text" id="product-description" name="description" />
+            </div>
+
+            <div class="form-group">
+              <label for="product-long-description"
+                >Description Détaillée</label
+              >
+              <textarea
+                id="product-long-description"
+                name="longDescription"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product-price">Prix *</label>
+                <input
+                  type="number"
+                  id="product-price"
+                  name="price"
+                  step="0.01"
+                  min="0"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="product-stock">Stock</label>
+                <input
+                  type="number"
+                  id="product-stock"
+                  name="stock"
+                  min="0"
+                  value="0"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product-category">Catégorie</label>
+                <select id="product-category" name="category">
+                  <option value="shampoo">Shampooing</option>
+                  <option value="conditioner">Après-Shampooing</option>
+                  <option value="mask">Masque</option>
+                  <option value="serum">Sérum / Huile</option>
+                  <option value="styling">Coiffage</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="product-visible">Visible</label>
+                <select id="product-visible" name="visible">
+                  <option value="true">Oui</option>
+                  <option value="false">Non</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Type de Cheveux</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="hairType" value="dry" />
+                  Secs</label
+                >
+                <label
+                  ><input type="checkbox" name="hairType" value="oily" />
+                  Gras</label
+                >
+                <label
+                  ><input type="checkbox" name="hairType" value="normal" />
+                  Normaux</label
+                >
+                <label
+                  ><input type="checkbox" name="hairType" value="curly" />
+                  Bouclés</label
+                >
+                <label
+                  ><input type="checkbox" name="hairType" value="damaged" />
+                  Abîmés</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Tags Spéciaux</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="special" value="new" />
+                  Nouveau</label
+                >
+                <label
+                  ><input type="checkbox" name="special" value="bestseller" />
+                  Bestseller</label
+                >
+                <label
+                  ><input type="checkbox" name="special" value="bio" />
+                  Bio</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="product-ingredients">Ingrédients (INCI)</label>
+              <textarea
+                id="product-ingredients"
+                name="ingredients"
+                rows="2"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Images du Produit</label>
+              <div class="image-upload-area" id="image-upload-area">
+                <input
+                  type="file"
+                  id="product-images"
+                  name="images"
+                  multiple
+                  accept="image/*"
+                  style="display: none"
+                />
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="document.getElementById('product-images').click()"
+                >
+                  📷 Ajouter des Images
+                </button>
+                <div id="image-preview" class="image-preview"></div>
+              </div>
+              <small
+                >Formats acceptés: JPEG, PNG, GIF, WebP. Max 5MB par
+                image.</small
+              >
+            </div>
+
+            <div class="form-group">
+              <label>Variantes (Tailles/Prix)</label>
+              <div id="variants-container">
+                <!-- Variants will be added here dynamically -->
+              </div>
+              <button
+                type="button"
+                class="btn btn-small btn-secondary"
+                onclick="addVariant()"
+              >
+                + Ajouter Variante
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="closeProductModal()"
+            >
+              Annuler
+            </button>
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+          </div>
+        </form>
+      </div>
     </div>
-    
+
     <!-- ==================== ORDER DETAIL MODAL ==================== -->
     <div class="modal" id="order-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Détails de la Commande</h3>
-                <button class="modal-close" onclick="closeOrderModal()">&times;</button>
-            </div>
-            
-            <div class="modal-body" id="order-detail-content">
-                <!-- Order details will be loaded here -->
-            </div>
-            
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="closeOrderModal()">Fermer</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Détails de la Commande</h3>
+          <button class="modal-close" onclick="closeOrderModal()">
+            &times;
+          </button>
         </div>
+
+        <div class="modal-body" id="order-detail-content">
+          <!-- Order details will be loaded here -->
+        </div>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onclick="closeOrderModal()"
+          >
+            Fermer
+          </button>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Admin JavaScript -->
     <script src="admin.js"></script>
-</body>
+  </body>
 </html>

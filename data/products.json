@@ -90,9 +90,18 @@
       "rating": 0,
       "reviewCount": 0,
       "images": [
-        "images/products/product-1768860140000-zdvzckehw.jpeg",
-        "images/products/product-1768860140002-ke01r36hv.png",
-        "images/products/product-1768860140003-c8ydlq2kr.jpeg"
+        {
+          "path": "images/products/product-1768860140000-zdvzckehw.jpeg",
+          "view": "vue2"
+        },
+        {
+          "path": "images/products/product-1768860140002-ke01r36hv.png",
+          "view": "vue1"
+        },
+        {
+          "path": "images/products/product-1768860140003-c8ydlq2kr.jpeg",
+          "view": "vue2"
+        }
       ],
       "variants": [
         {
@@ -106,7 +115,7 @@
       "stock": 0,
       "visible": true,
       "createdAt": "2026-01-19T22:02:19.940Z",
-      "updatedAt": "2026-01-19T22:02:20.005Z"
+      "updatedAt": "2026-01-19T22:10:27.968Z"
     }
   ]
 }

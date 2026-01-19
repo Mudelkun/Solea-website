@@ -1,8 +1,8 @@
 {
   "currency": {
     "symbol": " HTG",
-    "code": "EUR",
-    "name": "Euro"
+    "code": "HTG",
+    "name": "Gourde Haïtienne"
   },
   "admin": {
     "username": "admin",

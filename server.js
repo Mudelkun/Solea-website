@@ -549,6 +549,53 @@ app.post(
   },
 );
 
+/**
+ * PUT /api/admin/products/:id/image-views
+ * Update which view(s) each image belongs to (admin only)
+ */
+app.put("/api/admin/products/:id/image-views", requireAuth, (req, res) => {
+  const { imageViews } = req.body;
+
+  if (!imageViews || typeof imageViews !== "object") {
+    return res.status(400).json({ error: "Invalid image views data" });
+  }
+
+  const data = readJsonFile(PRODUCTS_FILE);
+  if (!data) {
+    return res.status(500).json({ error: "Failed to read products" });
+  }
+
+  // Find product
+  const product = data.products.find((p) => p.id === req.params.id);
+  if (!product) {
+    return res.status(404).json({ error: "Product not found" });
+  }
+
+  // Update image structure to include view information
+  if (product.images && Array.isArray(product.images)) {
+    product.images = product.images.map((img, index) => {
+      // Support both old format (string) and new format (object)
+      const imagePath = typeof img === "string" ? img : img.path || img;
+      const view = imageViews[index] || "vue1";
+
+      return {
+        path: imagePath,
+        view: view,
+      };
+    });
+  }
+
+  product.updatedAt = new Date().toISOString();
+
+  // Save to file
+  if (!writeJsonFile(PRODUCTS_FILE, data)) {
+    return res.status(500).json({ error: "Failed to save product" });
+  }
+
+  console.log("Image views updated for product:", req.params.id);
+  res.json({ message: "Image views updated successfully" });
+});
+
 // ==================== API ROUTES: ORDERS ====================
 
 /**

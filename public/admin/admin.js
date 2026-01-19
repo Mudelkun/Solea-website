@@ -1080,6 +1080,7 @@ function getCurrencyName(code) {
     CAD: "Dollar Canadien",
     XOF: "Franc CFA",
     MAD: "Dirham Marocain",
+    HTG: "Gourde Haïtienne",
   };
   return names[code] || code;
 }
