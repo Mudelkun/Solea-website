@@ -690,6 +690,9 @@ ul {
   padding: var(--spacing-sm) 0;
   scrollbar-width: thin;
   scrollbar-color: var(--color-cotton-candy) var(--color-soft-blush);
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -1619,6 +1622,12 @@ ul {
 
   .product-card {
     flex: 0 0 250px;
+  }
+
+  /* Mobile carousel - preserve scroll behavior */
+  .carousel-track {
+    justify-content: flex-start;
+    overflow-x: scroll;
   }
 
   .partners-logos img {
