@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Décoration d'Intérieur Solea - Services professionnels de décoration pour tous vos espaces"
+    />
+    <title>Décoration d'Intérieur - Solea</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+    />
+  </head>
+  <body>
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/solea-logo.png" alt="Solea Logo" class="logo-image" />
+              <h1>Solea</h1>
+            </a>
+          </div>
+
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="shop.html">Boutique</a></li>
+            <li><a href="ecole.html">École</a></li>
+            <li><a href="conduite.html">Conduite</a></li>
+            <li><a href="decoration.html" class="active">Décoration</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-utilities">
+            <button class="search-toggle-btn" aria-label="Toggle search">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+
+            <div class="search-box">
+              <input type="text" placeholder="Rechercher..." />
+              <button type="submit" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+              </button>
+            </div>
+
+            <a href="order-list.html" class="cart-icon" aria-label="Order list">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="cart-count">0</span>
+            </a>
+
+            <div class="language-toggle">
+              <a href="#" class="active">FR</a>
+              <span>|</span>
+              <a href="#">EN</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="page-hero decoration-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Décoration d'Intérieur</h1>
+        <p class="hero-subtitle">
+          Transformez votre espace en un lieu unique et harmonieux. Nos experts
+          créent des intérieurs sur mesure qui reflètent votre personnalité.
+        </p>
+        <div class="hero-ctas">
+          <a href="#quote" class="btn btn-primary">Demander un Devis</a>
+          <a href="#portfolio" class="btn btn-secondary">Voir nos Réalisations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="intro-section">
+      <div class="container">
+        <h2 class="section-title">Nos Services</h2>
+        <p class="section-subtitle">
+          Des solutions de décoration pour tous vos espaces
+        </p>
+
+        <div class="programs-grid">
+          <!-- Service 1 -->
+          <div class="program-card">
+            <div class="program-icon">🏠</div>
+            <h3>Résidentiel</h3>
+            <div class="program-details">
+              <p>Appartements & Maisons</p>
+            </div>
+            <p class="program-description">
+              Créez un intérieur chaleureux et fonctionnel pour votre maison.
+              Nous travaillons sur tous les espaces : salon, chambre, cuisine,
+              salle de bain et espaces extérieurs.
+            </p>
+            <a href="#quote" class="btn btn-outline">Demander un Devis</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="program-card">
+            <div class="program-icon">🏢</div>
+            <h3>Commercial</h3>
+            <div class="program-details">
+              <p>Bureaux & Commerces</p>
+            </div>
+            <p class="program-description">
+              Optimisez vos espaces professionnels pour améliorer la productivité
+              et l'image de marque. Nous créons des environnements de travail
+              inspirants et accueillants.
+            </p>
+            <a href="#quote" class="btn btn-outline">Demander un Devis</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="program-card">
+            <div class="program-icon">🎉</div>
+            <h3>Événementiel</h3>
+            <div class="program-details">
+              <p>Mariages & Événements</p>
+            </div>
+            <p class="program-description">
+              Créez des moments inoubliables avec une décoration événementielle
+              sur mesure. Mariages, anniversaires, lancements de produits et
+              fêtes d'entreprise.
+            </p>
+            <a href="#quote" class="btn btn-outline">Demander un Devis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS SECTION ==================== -->
+    <section class="faculty-section">
+      <div class="container">
+        <h2 class="section-title">Notre Processus</h2>
+        <p class="section-subtitle">
+          De la conception à la réalisation, nous vous accompagnons
+        </p>
+
+        <div class="faculty-grid">
+          <div class="faculty-card">
+            <div class="faculty-image" style="background: linear-gradient(135deg, #6B2D5C 0%, #C47B9C 100%); display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 3rem; color: white;">1</span>
+            </div>
+            <h4>Consultation</h4>
+            <p class="faculty-role">Rencontre Initiale</p>
+            <p class="faculty-bio">Nous discutons de vos besoins, goûts et budget</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image" style="background: linear-gradient(135deg, #6B2D5C 0%, #C47B9C 100%); display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 3rem; color: white;">2</span>
+            </div>
+            <h4>Conception</h4>
+            <p class="faculty-role">Création du Design</p>
+            <p class="faculty-bio">Nous créons les plans et propositions visuelles</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image" style="background: linear-gradient(135deg, #6B2D5C 0%, #C47B9C 100%); display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 3rem; color: white;">3</span>
+            </div>
+            <h4>Réalisation</h4>
+            <p class="faculty-role">Exécution du Projet</p>
+            <p class="faculty-bio">Nous supervisons la mise en œuvre complète</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO SECTION ==================== -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Nos Réalisations</h2>
+        <p class="section-subtitle">
+          Découvrez quelques-uns de nos projets récents
+        </p>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="images/mission.jpg" alt="Salon Moderne" />
+            <div class="portfolio-overlay">
+              <h4>Salon Contemporain</h4>
+              <p>Rénovation complète - Paris 16ème</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/hair-products.jpg" alt="Chambre Design" />
+            <div class="portfolio-overlay">
+              <h4>Suite Parentale</h4>
+              <p>Décoration luxueuse - Neuilly</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/school.jpg" alt="Bureau Pro" />
+            <div class="portfolio-overlay">
+              <h4>Espace Coworking</h4>
+              <p>Aménagement bureaux - La Défense</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Témoignages Clients</h2>
+        <p class="section-subtitle">
+          Ce que nos clients disent de nous
+        </p>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "L'équipe de décoration Solea a transformé notre appartement en un
+              véritable havre de paix. Leur écoute et leur créativité sont
+              exceptionnelles. Nous recommandons vivement !"
+            </p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-1.jpg" alt="Claire Martin" />
+              <div>
+                <h4>Claire Martin</h4>
+                <p>Projet résidentiel - Paris</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Pour l'aménagement de nos nouveaux bureaux, Solea a su créer un
+              espace à la fois professionnel et accueillant. Nos équipes adorent
+              leur nouvel environnement de travail."
+            </p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-2.jpg" alt="Marc Dubois" />
+              <div>
+                <h4>Marc Dubois</h4>
+                <p>Directeur - StartupTech</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== QUOTE REQUEST SECTION ==================== -->
+    <section class="admissions-section" id="quote">
+      <div class="container">
+        <h2 class="section-title">Demander un Devis</h2>
+        <p class="section-subtitle">
+          Décrivez votre projet et recevez une estimation personnalisée
+        </p>
+
+        <div class="admissions-grid">
+          <div class="admissions-process">
+            <h3>Informations sur les Tarifs</h3>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-number">💰</div>
+                <div class="step-content">
+                  <h4>Consultation Initiale</h4>
+                  <p>Gratuite et sans engagement</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">📐</div>
+                <div class="step-content">
+                  <h4>Conception</h4>
+                  <p>À partir de 500€ selon le projet</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">🏠</div>
+                <div class="step-content">
+                  <h4>Réalisation Complète</h4>
+                  <p>Devis sur mesure selon vos besoins</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="deadlines-box">
+              <h4>Ce que nous offrons</h4>
+              <ul>
+                <li>✓ Visite sur site gratuite</li>
+                <li>✓ Plans 2D et 3D</li>
+                <li>✓ Sélection de matériaux</li>
+                <li>✓ Suivi de chantier</li>
+                <li>✓ Garantie satisfaction</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="admissions-form">
+            <h3>Formulaire de Devis</h3>
+            <form id="decoration-quote-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nom">Nom <span class="required">*</span></label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+                <div class="form-group">
+                  <label for="prenom">Prénom <span class="required">*</span></label>
+                  <input type="text" id="prenom" name="prenom" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telephone">Téléphone <span class="required">*</span></label>
+                <input type="tel" id="telephone" name="telephone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="type-projet">Type de Projet <span class="required">*</span></label>
+                <select id="type-projet" name="type-projet" required>
+                  <option value="">Sélectionnez un type</option>
+                  <option value="residentiel">Résidentiel</option>
+                  <option value="commercial">Commercial</option>
+                  <option value="evenementiel">Événementiel</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Budget Estimé <span class="optional">(optionnel)</span></label>
+                <select id="budget" name="budget">
+                  <option value="">Sélectionnez une fourchette</option>
+                  <option value="moins-5000">Moins de 5 000€</option>
+                  <option value="5000-10000">5 000€ - 10 000€</option>
+                  <option value="10000-25000">10 000€ - 25 000€</option>
+                  <option value="25000-50000">25 000€ - 50 000€</option>
+                  <option value="plus-50000">Plus de 50 000€</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description du Projet <span class="required">*</span></label>
+                <textarea id="description" name="description" rows="4" placeholder="Décrivez votre projet, vos envies, contraintes..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Demander mon Devis
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h4>Liens Rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="shop.html">Boutique</a></li>
+              <li><a href="ecole.html">École</a></li>
+              <li><a href="conduite.html">Conduite</a></li>
+              <li><a href="decoration.html">Décoration</a></li>
+              <li><a href="about.html">À Propos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+33 1 23 45 67 89</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>contact@solea.com</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>123 Rue de la Beauté, Paris</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 2l4 4-4 4"></path>
+                  <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                  <path d="M7 22l-4-4 4-4"></path>
+                  <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
+                </svg>
+                <span>WhatsApp: +33 6 12 34 56 78</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Horaires</h4>
+            <ul>
+              <li>Lundi - Vendredi: 9h - 19h</li>
+              <li>Samedi: 10h - 18h</li>
+              <li>Dimanche: Fermé</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="legal-links">
+            <a href="#privacy">Politique de Confidentialité</a>
+            <span>|</span>
+            <a href="#terms">Conditions d'Utilisation</a>
+            <span>|</span>
+            <a href="#cookies">Politique de Cookies</a>
+            <span>|</span>
+            <a href="#shipping">Livraison & Retours</a>
+          </div>
+          <p class="copyright">&copy; 2026 Solea. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="js/api.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/pages.js"></script>
+  </body>
+</html>
