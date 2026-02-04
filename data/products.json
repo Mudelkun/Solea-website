@@ -5,7 +5,7 @@
       "name": "Masque Nutrition Intense Bio",
       "description": "Formule bio ultra-nourrissante",
       "longDescription": "Masque bio ultra-nourrissant pour cheveux très secs et bouclés. Formule 100% naturelle pour une nutrition intense.",
-      "price": 38.99,
+      "price": 2500,
       "category": "mask",
       "hairType": [
         "curly",
@@ -26,12 +26,12 @@
       ],
       "variants": [
         {
-          "name": "200ml",
-          "price": 38.99
+          "name": "Produit",
+          "price": 2500
         },
         {
-          "name": "400ml",
-          "price": 64.99
+          "name": "Guide",
+          "price": 250
         }
       ],
       "benefits": [
@@ -58,7 +58,7 @@
       "name": "Test image upload 2",
       "description": "",
       "longDescription": "",
-      "price": 100000,
+      "price": 2500,
       "category": "shampoo",
       "hairType": [],
       "special": [],
@@ -68,7 +68,16 @@
       "images": [
         "images/products/product-1768859733296-movmu967m.jpeg"
       ],
-      "variants": [],
+      "variants": [
+        {
+          "name": "Produit",
+          "price": 2500
+        },
+        {
+          "name": "Guide",
+          "price": 250
+        }
+      ],
       "benefits": [],
       "ingredients": "",
       "certifications": [],
@@ -82,7 +91,7 @@
       "name": "Test many uploads",
       "description": "Website design",
       "longDescription": "w",
-      "price": 10,
+      "price": 2500,
       "category": "shampoo",
       "hairType": [],
       "special": [],
@@ -105,8 +114,12 @@
       ],
       "variants": [
         {
-          "name": "250ml",
-          "price": 0.37
+          "name": "Produit",
+          "price": 2500
+        },
+        {
+          "name": "Guide",
+          "price": 250
         }
       ],
       "benefits": [],
